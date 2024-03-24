@@ -101,7 +101,7 @@
 iframe { 
   width: 75%;
   aspect-ratio: 17.8 / 10;
-  padding-bottom: 4%;
+  padding-bottom: 2.5%;
 }
 
 /*
@@ -148,7 +148,7 @@ iframe {
   }
 
   #showcase-video {
-    width: 92%;
+    width: 95%;
   }
 }
 

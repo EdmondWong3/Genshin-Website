@@ -5,7 +5,13 @@
   margin-top: 100px;
 }
 
-#character-name {
+#long-name-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#character-name:not(.long-name) {
   font-size: 50px;
   letter-spacing: 8px;
 }
@@ -146,7 +152,31 @@ iframe {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  /*
+  * Some characters have long names. These names need to be adjusted on mobile and smaller devices.
+  */
+  #long-name-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
 
+  .part-of-character-name {
+    margin-bottom: 0px;
+  }
 
+  .long-name {
+    font-size: 45px;
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .long-name {
+    font-size: 50px;
+    letter-spacing: 8px;
+  }
+}
 
 

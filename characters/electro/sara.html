@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Sara</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="side-navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">SARA</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Sara_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Leader of the Tenryou Commission's forces. A charismatic woman who
+          acts as swiftly as a storm wind and always honors her word. She bears
+          the title of "Devotee of the Divine" and has sworn her allegiance to
+          the Raiden Shogun. The eternity that the Shogun pursues is the cause
+          that she is willing to fight for.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Tengu Bowmanship</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 5 consecutive shots with a bow.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Perform a more precise Aimed Shot with increased DMG. While
+                  aiming, crackling lightning will accumulate on the arrowhead.
+                  An arrow fully charged with the storm's might will deal
+                  Electro DMG. When in the Crowfeather Cover state, a
+                  fully-charged arrow will leave a Crowfeather behind after it
+                  hits.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Fires off a shower of arrows in mid-air before falling and
+                  striking the ground, dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Tengu Stormcall</td>
+              <td>
+                <p>
+                  Retreats rapidly with the speed of a tengu, summoning the
+                  protection of the Crowfeather. Gains Crowfeather Cover for
+                  18s, and when Kujou Sara fires a fully-charged Aimed Shot,
+                  Crowfeather Cover will be consumed, and will leave a
+                  Crowfeather at the target location. Crowfeathers will trigger
+                  Tengu Juurai: Ambush after a short time, dealing Electro DMG
+                  and granting the active character within its AoE an ATK Bonus
+                  based on Kujou Sara's Base ATK. The ATK Bonuses from different
+                  Tengu Juurai will not stack, and their effects and duration
+                  will be determined by the last Tengu Juurai to take effect.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Subjugation: Koukou Sendou</td>
+              <td>
+                <p>
+                  Casts down Tengu Juurai: Titanbreaker, dealing AoE Electro
+                  DMG. Afterwards, Tengu Juurai: Titanbreaker spreads out into 4
+                  consecutive bouts of Tengu Juurai: Stormcluster, dealing AoE
+                  Electro DMG. Tengu Juurai: Titanbreaker and Tengu Juurai:
+                  Stormcluster can provide the active character within their AoE
+                  with the same ATK Bonus as given by the Elemental Skill, Tengu
+                  Stormcall. The ATK Bonus provided by various kinds of Tengu
+                  Juurai will not stack, and their effects and duration will be
+                  determined by the last Tengu Juurai to take effect.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Immovable Will</td>
+              <td>
+                <p>
+                  While in the Crowfeather Cover state provided by Tengu
+                  Stormcall, Aimed Shot charge times are decreased by 60%.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Decorum</td>
+              <td>
+                <p>
+                  When Tengu Juurai: Ambush hits opponents, Kujou Sara will
+                  restore 1.2 Energy to all party members for every 100% Energy
+                  Recharge she has. This effect can be triggered once every 3s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Land Survey</td>
+              <td>
+                <p>
+                  When dispatched on an expedition in Inazuma, time consumed is
+                  reduced by 25%.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Crow's Eye</td>
+              <td>
+                When Tengu Juurai grant characters ATK Bonuses or hits
+                opponents, the CD of Tengu Stormcall is decreased by 1s. This
+                effect can be triggered once every 3s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Dark Wings</td>
+              <td>
+                Unleashing Tengu Stormcall will leave a weaker Crowfeather at
+                Kujou Sara's original position that will deal 30% of its
+                original DMG.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>The War Within</td>
+              <td>
+                Increases the Level of Subjugation: Koukou Sendou by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Conclusive Proof</td>
+              <td>
+                The number of Tengu Juurai: Stormcluster released by
+                Subjugation: Koukou Sendou is increased to 6.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Spellsinger</td>
+              <td>
+                Increases the Level of Tengu Stormcall by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Sin of Pride</td>
+              <td>
+                The Electro DMG of characters who have had their ATK increased
+                by Tengu Juurai has its Crit DMG increased by 60%.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/3jurkPtkbOE?si=Eyb5ORFh9wDXO3jl"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

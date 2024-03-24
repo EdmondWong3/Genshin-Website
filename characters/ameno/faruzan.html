@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Faruzan</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="side-navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <!--A container which shows the character avatar and their lore.-->
+    <div id="character-content-container">
+      <h1 id="character-name">FARUZAN</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Faruzan_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A distinguished Akademiya scholar from "a century ago" and one of the
+          founders of Ancient Mechanics as a field of study. Although she hailed
+          from Haravatat, she was renowned for her talents in machinery
+          throughout Sumeru... Even though these honors have been forgotten in
+          the river of time, much as she has.
+        </p>
+      </div>
+
+      <!--Section containers which show the character's abilities and their upgrades. Makes use of unordered lists and also includes a video guide.-->
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Parthian Shot</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive shots with a bow.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Performs a more precise Aimed Shot with increased DMG. While
+                  aiming, mighty winds will accumulate on the arrowhead. A fully
+                  charged wind arrow will deal Anemo DMG.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Fires off a shower of arrows in mid-air before falling and
+                  striking the ground, hitting opponents along the path and
+                  dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Wind Realm of Nasamjnin</td>
+              <td>
+                <p>
+                  Faruzan deploys a polyhedron that deals AoE Anemo DMG to
+                  nearby opponents. She will also enter the Manifest Gale state.
+                  While in the Manifest Gale state, Faruzan's next fully charged
+                  shot will consume this state and will become a Hurricane Arrow
+                  that contains high-pressure currents. This arrow deals Anemo
+                  DMG based on the DMG of a fully charged Aimed Shot from
+                  "Normal Attack: Parthian Shot."
+                </p>
+                <p class="bold-and-bring-up">Pressurized Collapse</p>
+                <p>
+                  The Hurricane Arrow will apply a Pressurized Collapse effect
+                  to the opponent or character hit. This effect will be removed
+                  after a short delay, creating a vortex that deals AoE Anemo
+                  DMG and pulls nearby objects and opponents in. If the
+                  Hurricane Arrow does not hit any opponent or character, it
+                  will create a Pressurized Collapse effect at its point of
+                  impact. The vortex DMG is considered Elemental Skill DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>The Wind's Secret Ways</td>
+              <td>
+                <p>
+                  Faruzan deploys a Dazzling Polyhedron that unleashes a
+                  Whirlwind Pulse and deals AoE Anemo DMG. While the Dazzling
+                  Polyhedron persists, it will continuously move along a
+                  triangular path. Once it reaches each corner of that
+                  triangular path, it will unleash 1 more Whirlwind Pulse.
+                </p>
+                <p class="bold-and-bring-up">Whirlwind Pulse</p>
+                <ul>
+                  <li>
+                    When the Whirlwind Pulse is unleashed, it will apply
+                    Perfidious Wind's Bale to nearby opponents, decreasing their
+                    Anemo RES.
+                  </li>
+                  <li>
+                    The Whirlwind Pulse will also apply Prayerful Wind's Benefit
+                    to all nearby party members when it is unleashed, granting
+                    them an Anemo DMG Bonus.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Impetuous Flow</td>
+              <td>
+                <p>
+                  When Faruzan is in the Manifest Gale state created by Wind
+                  Realm of Nasamjnin, the amount of time taken to charge a shot
+                  is decreased by 60%, and she can apply The Wind's Secret Ways'
+                  Perfidious Wind's Bale to opponents who are hit by the vortex
+                  created by Pressurized Collapse.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Lost Wisdom of the Seven Caverns</td>
+              <td>
+                <p>
+                  When characters affected by The Wind's Secret Ways' Prayerful
+                  Wind's Gift deal Anemo DMG using Normal, Charged, Plunging
+                  Attacks, Elemental Skills, or Elemental Bursts to opponents,
+                  they will gain the Hurricane Guard effect: This DMG will be
+                  increased based on 32% of Faruzan's Base ATK. 1 instance of
+                  Hurricane Guard can occur once every 0.8s. This DMG Bonus will
+                  be cleared after Prayerful Wind's Benefit expires or after the
+                  effect is triggered once.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Tomes Light the Path</td>
+              <td>
+                Gains 25% more rewards when dispatched on a Sumeru Expedition
+                for 20 hours.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Truth by Any Means</td>
+              <td>
+                Faruzan can fire off a maximum of 2 Hurricane Arrows using fully
+                charged Aimed Shots while under the effect of a single Manifest
+                Gale created by Wind Realm of Nasamjnin.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Overzealous Intellect</td>
+              <td>
+                The duration of the Dazzling Polyhedron created by The Wind's
+                Secret Ways is increased by 6s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Spirit-Orchard Stroll</td>
+              <td>
+                Increases the Level of Wind Realm of Nasamjnin by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Divine Comprehension</td>
+              <td>
+                The vortex created by Pressurized Collapses will restore Energy
+                to Faruzan based on the number of opponents hit: If it hits 1
+                opponent, it will restore 2 Energy for Faruzan. Each additional
+                opponent hit will restore 0.5 more Energy for Faruzan.A maximum
+                of 4 Energy can be restored to her per vortex.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Wonderland of Rumination</td>
+              <td>
+                Increases the Level of The Wind's Secret Ways by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>The Wondrous Path of Truth</td>
+              <td>
+                Characters affected by The Wind's Secret Ways' Prayerful Wind's
+                Benefit have 40% increased CRIT DMG when they deal Anemo DMG.
+                When the active character deals DMG while affected by Prayerful
+                Wind's Benefit, they will apply Pressurized Collapse to the
+                opponent damaged. This effect can be triggered once every 3s.
+                This CD is shared between all party members.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/qnPSBqWbrGA?si=NZdtLCIHIHcJGcIX"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

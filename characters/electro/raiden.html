@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Raiden Shogun</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="side-navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">RAIDEN SHOGUN</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Raiden_Shogun_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          The Raiden Shogun is the awesome and terrible power of thunder
+          incarnate, the exalted ruler of the Inazuma Shogunate. With the might
+          of lightning at her disposal, she commits herself to the solitary
+          pursuit of eternity.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Origin</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 5 consecutive spear strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to perform an upward
+                  slash.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Transcendence: Baleful Omen</td>
+              <td>
+                <p>
+                  The Raiden Shogun unveils a shard of her Euthymia, dealing
+                  Electro DMG to nearby opponents, and granting nearby party
+                  members the Eye of Stormy Judgment.
+                </p>
+                <p class="bold-and-bring-up">Eye of Stormy Judgment</p>
+                <ul>
+                  <li>
+                    When characters with this buff attack and deal DMG to
+                    opponents, the Eye will unleash a coordinated attack,
+                    dealing AoE Electro DMG at the opponent's position.
+                  </li>
+                  <li>
+                    Characters who gain the Eye of Stormy Judgment will have
+                    their Elemental Burst DMG increased based on the Energy Cost
+                    of the Elemental Burst during the Eye's duration.
+                  </li>
+                </ul>
+                <p>
+                  The Eye can initiate one coordinated attack every 0.9s per
+                  party. Coordinated attacks generated by characters not
+                  controlled by you deal 20% of the normal DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Secret Art: Musou Shinsetsu</td>
+              <td>
+                <p>
+                  Gathering truths unnumbered and wishes uncounted, the Raiden
+                  Shogun unleashes the Musou no Hitotachi and deals AoE Electro
+                  DMG, using Musou Isshin in combat for a certain duration
+                  afterward. The DMG dealt by Musou no Hitotachi and Musou
+                  Isshin's attacks will be increased based on the number of
+                  Chakra Desiderata's Resolve stacks consumed when this skill is
+                  used.
+                </p>
+                <p class="bold-and-bring-up">Musou Isshin</p>
+                <p>
+                  While in this state, the Raiden Shogun will wield her tachi in
+                  battle, while her Normal, Charged, and Plunging Attacks will
+                  be infused with Electro DMG, which cannot be overridden. When
+                  such attacks hit opponents, she will regenerate Energy for all
+                  nearby party members. Energy can be restored this way once
+                  every 1s, and this effect can be triggered 5 times throughout
+                  this skill's duration. While in this state, the Raiden
+                  Shogun's resistance to interruption is increased, and she is
+                  immune to Electro-Charged reaction DMG. While Musou Isshin is
+                  active, the Raiden Shogun's Normal, Charged, and Plunging
+                  Attack DMG will be considered Elemental Burst DMG. The effects
+                  of Musou Isshin will be cleared when the Raiden Shogun leaves
+                  the field.
+                </p>
+                <p class="bold-and-bring-up">Chakra Desiderata</p>
+                <p>
+                  When nearby party members (excluding the Raiden Shogun
+                  herself) use their Elemental Bursts, the Raiden Shogun will
+                  build up Resolve stacks based on the Energy Cost of these
+                  Elemental Bursts. The maximum number of Resolve stacks is 60.
+                  The Resolve gained by Chakra Desiderata will be cleared 300s
+                  after the Raiden Shogun leaves the field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Wishes Unnumbered</td>
+              <td>
+                <p>
+                  When nearby party members gain Elemental Orbs or Particles,
+                  Chakra Desiderata gains 2 Resolve stacks. This effect can
+                  occur once every 3s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Enlightened One</td>
+              <td>
+                <p>
+                  Each 1% above 100% Energy Recharge that the Raiden Shogun
+                  possesses grants her:
+                </p>
+                <ul>
+                  <li>0.6% greater Energy restoration from Musou Isshin</li>
+                  <li>0.4% Electro DMG Bonus.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>All-Preserver</td>
+              <td>
+                <p>
+                  Mora expended when ascending Swords and Polearms is decreased
+                  by 50%.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Ominous Inscription</td>
+              <td>
+                Chakra Desiderata will gather Resolve even faster. When Electro
+                characters use their Elemental Bursts, the Resolve gained is
+                increased by 80%. When characters of other Elemental Types use
+                their Elemental Bursts, the Resolve gained is increased by 20%.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Steelbreaker</td>
+              <td>
+                While using Musou no Hitotachi and in the Musou Isshin state
+                applied by Secret Art: Musou Shinsetsu, the Raiden Shogun's
+                attacks ignore 60% of opponents' DEF.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Shinkage Bygones</td>
+              <td>
+                Increases the Level of Secret Art: Musou Shinsetsu by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Pledge of Propriety</td>
+              <td>
+                When the Musou Isshin state applied by Secret Art: Musou
+                Shinsetsu expires, all nearby party members (excluding the
+                Raiden Shogun) gain 30% bonus ATK for 10s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Shogun's Descent</td>
+              <td>
+                Increases the Level of Transcendence: Baleful Omen by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Wishbearer</td>
+              <td>
+                While in the Musou Isshin state applied by Secret Art: Musou
+                Shinsetsu, attacks by the Raiden Shogun that are considered part
+                of her Elemental Burst will decrease all nearby party members'
+                (but not including the Raiden Shogun herself) Elemental Burst CD
+                by 1s when they hit opponents. This effect can trigger once
+                every 1s, and can trigger a total of 5 times during the state's
+                duration.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/t56BLyPn9eM?si=ZIUiAg2GRNXsIYCg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Cyno</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span id="side-navigation-current-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">CYNO</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Cyno_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          The General Mahamatra of the Akademiya, leader of all the Matras. He
+          has a unique sense of humor that never fails to leave a deep
+          impression.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Invoker's Spear</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive spear strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to lunge forward, dealing
+                  damage to opponents along the way.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Secret Rite: Chasmic Soulfarer</td>
+              <td>
+                <p>
+                  Performs a swift thrust, dealing Electro DMG to opponents
+                  along the path. When Cyno is under the Pathsworn Pathclearer
+                  state triggered by Sacred Rite: Wolf's Swiftness, he will
+                  instead unleash a Mortuary Rite that deals thunderous AoE
+                  Electro DMG and extends the duration of Pathsworn Pathclearer.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Sacred Rite: Wolf's Swiftness</td>
+              <td>
+                <p>
+                  Calls upon a divine spirit to indwell him, morphing into the
+                  Pactsworn Pathclearer.
+                </p>
+                <p class="bold-and-bring-up">Pactsworn Pathclearer</p>
+                <p>
+                  Cyno's Normal, Charged, and Plunging Attacks will be converted
+                  to Electro DMG that cannot be overridden.
+                </p>
+                <ul>
+                  <li>
+                    Cyno's Elemental Mastery and resistance to interruption will
+                    increase, and he gains immunity to Electro-Charged DMG.
+                  </li>
+                </ul>
+                <p>
+                  This effect will be canceled when Cyno leaves the field and
+                  lasts a maximum of 18s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Featherfall Judgment</td>
+              <td>
+                <p>
+                  When Cyno is in the Pactsworn Pathclearer state activated by
+                  Sacred Rite: Wolf's Swiftness, Cyno will enter the Endseer
+                  stance at intervals. If he activates Secret Rite: Chasmic
+                  Soulfarer while affected by this stance, he will activate the
+                  Judication effect, increasing the DMG of this Secret Rite:
+                  Chasmic Soulfarer by 35%, and firing off 3 Duststalker Bolts
+                  that deal 100% of Cyno's ATK as Electro DMG. Duststalker Bolt
+                  DMG is considered Elemental Skill DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Authority Over the Nine Bows</td>
+              <td>
+                <p>
+                  Cyno's DMG values will be increased based on his Elemental
+                  Mastery as follows:
+                </p>
+                <ul>
+                  <li>
+                    Pactsworn Pathclearer's Normal Attack DMG is increased by
+                    150% of his Elemental Mastery.
+                  </li>
+                  <li>
+                    Duststalker Bolt DMG from his Passive Talent Featherfall
+                    Judgment is increased by 250% of his Elemental Mastery.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>The Gift of Silence</td>
+              <td>
+                <p>
+                  Gains 25% more rewards when dispatched on a Sumeru Expedition
+                  for 20 hours.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Ordinance: Unceasing Vigil</td>
+              <td>
+                After using Sacred Rite: Wolf's Swiftness, Cyno's Normal Attack
+                SPD will be increased by 20% for 10s. If the Judication effect
+                of his Passive Talent Featherfall Judgment is triggered during
+                Secret Rite: Chasmic Soulfarer, the duration of this increase
+                will be refreshed. You need to unlock the Passive Talent
+                "Featherfall Judgement."
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Ceremony: Homecoming of Spirits</td>
+              <td>
+                When Cyno's Normal Attacks hit opponents, his Electro DMG Bonus
+                will increase by 10% for 4s. This effect can be triggered once
+                every 0.1s. Max 5 stacks.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Precept: Lawful Enforcer</td>
+              <td>
+                Increases the Level of Sacred Rite: Wolf's Swiftness by 3.
+                Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Austerity: Forbidding Guard</td>
+              <td>
+                When Cyno is in the Pactsworn Pathclearer state triggered by
+                Sacred Rite: Wolf's Swiftness, after he triggers
+                Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate,
+                Hyperbloom, or an Electro Swirl reaction, he will restore 3
+                Elemental Energy for all nearby party members (except himself).
+                This effect can occur 5 times within one use of Sacred Rite:
+                Wolf's Swiftness.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Funerary Rite: The Passing of Starlight</td>
+              <td>
+                Increases the Level of Secret Rite: Chasmic Soulfarer by 3.
+                Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Raiment: Just Scales</td>
+              <td>
+                After using Sacred Rite: Wolf's Swiftness or triggering the
+                Judication effect of the Passive Talent "Featherfall Judgment,"
+                Cyno will gain 4 stacks of the "Day of the Jackal" effect. When
+                he hits opponents with Normal Attacks, he will consume 1 stack
+                of "Day of the Jackal" to fire off one Duststalker Bolt. "Day of
+                the Jackal" lasts for 8s. Max 8 stacks. It will be canceled once
+                Pactsworn Pathclearer ends. A maximum of 1 Duststalker Bolt can
+                be unleashed this way every 0.4s. You must first unlock the
+                Passive Talent "Featherfall Judgment."
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/7jhkJD3qDQ8?si=n5YsVtultBNom7sU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

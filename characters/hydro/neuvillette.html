@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Neuvillette</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="side-navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">NEUVILLETTE</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Neuvillette_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          You wouldn't exactly describe the Iudex of Fontaine as "approachable."
+          It's hard to say whether it's just in his nature, or because he has
+          secrets to hide.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>As Water Seeks Equilibrium</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  With light flourishes, Neuvillette commands the tides to
+                  unleash a maximum of 3 attacks, dealing Hydro DMG.
+                </p>
+                <p class="bold-and-bring-up">
+                  Charged Attack Empowerment: Legal Evaluation
+                </p>
+                <p>
+                  While charging up, Neuvillette will gather the power of water,
+                  forming it into a Seal of Arbitration. In this state,
+                  Neuvillette can move and change facing, and also absorb any
+                  Sourcewater Droplets in a certain AoE. Every Droplet he
+                  absorbs will increase the formation speed of the Seal, and
+                  will heal Neuvillette. When the charging is stopped, if the
+                  Symbol has yet to be formed, then a Charged Attack will be
+                  unleashed. If it has been formed, then a Charged Attack:
+                  Equitable Judgment will be unleashed.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a fixed amount of Stamina to attack opponents with a
+                  rupturing blast of water, dealing AoE Hydro DMG.
+                </p>
+                <p class="bold-and-bring-up">
+                  Charged Attack: Equitable Judgment
+                </p>
+                <p>
+                  Unleashes surging torrents, dealing continuous AoE Hydro DMG
+                  to all opponents in a straight-line area in front of him.
+                  Equitable Judgment will not consume any Stamina and lasts 3s.
+                  If Neuvillette's HP is above 50%, he will continuously lose HP
+                  while using this attack.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Gathering the might of Hydro, Neuvillette plunges towards the
+                  ground from mid-air, damaging all opponents in his path. Deals
+                  AoE Hydro DMG upon impact with the ground.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>O Tears, I Shall Repay</td>
+              <td>
+                <p>
+                  Summons a Raging Waterfall that will deal AoE Hydro DMG to
+                  opponents in front of Neuvillette based on his Max HP. After
+                  hitting an opponent, this skill will generate 3 Sourcewater
+                  Droplets near that opponent.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Pneuma</p>
+                <p>
+                  At certain intervals, when the Raging Waterfall descends, a
+                  Spiritbreath Thorn will descend that will pierce opponents,
+                  dealing Pneuma-aligned Hydro DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>O Tides, I Have Returned</td>
+              <td>
+                <p>
+                  Unleashes waves that will deal AoE Hydro DMG based on
+                  Neuvillette's Max HP. After a short interval, 2 waterfalls
+                  will descend and deal Hydro DMG in a somewhat smaller AoE, and
+                  will generate 6 Sourcewater Droplets within an area in front.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Heir to the Ancient Sea's Authority</td>
+              <td>
+                <p>
+                  When a party member triggers a Vaporize, Frozen,
+                  Electro-Charged, Bloom, Hydro Swirl, or a Hydro Crystallize
+                  reaction on opponents, 1 stack of Past Draconic Glories will
+                  be granted to Neuvillette for 30s. Max 3 stacks. Past Draconic
+                  Glories causes Charged Attack: Equitable Judgment to deal
+                  110%/125%/160% of its original DMG. The stacks of Past
+                  Draconic Glories created by each kind of Elemental Reaction
+                  exist independently.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Discipline of the Supreme Arbitration</td>
+              <td>
+                <p>
+                  For each 1% of Neuvillette's current HP greater than 30% of
+                  Max HP, he will gain 0.6% Hydro DMG Bonus. A maximum bonus of
+                  30% can be obtained this way.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Gather Like the Tide</td>
+              <td>
+                <p>
+                  Increases underwater Sprint SPD for your own party members by
+                  15%. Not stackable with Passive Talents that provide the exact
+                  same effects.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Venerable Institution</td>
+              <td>
+                When Neuvillette takes the field, he will obtain 1 stack of Past
+                Draconic Glories from the Passive Talent "Heir to the Ancient
+                Sea's Authority." You must first unlock the Passive Talent "Heir
+                to the Ancient Sea's Authority". Additionally, his interruption
+                resistance will be increased while using the Charged Attack
+                Empowerment: Legal Evaluation and the Charged Attack: Equitable
+                Judgment.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Juridical Exhortation</td>
+              <td>
+                The Passive Talent "Heir to the Ancient Sea's Authority" will be
+                enhanced: Each stack of Past Draconic Glories will increase the
+                CRIT DMG of Charged Attack: Equitable Judgment by 14%. The
+                maximum increase that can be achieved this way is 42%. You must
+                first unlock the Passive Talent "Heir to the Ancient Sea's
+                Authority."
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Ancient Postulation</td>
+              <td>
+                Increases the Level of Normal Attack: As Water Seeks Equilibrium
+                by 3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Crown of Commiseration</td>
+              <td>
+                When Neuvillette is on the field and is healed, 1 Sourcewater
+                Droplet will be generated. This effect can occur once every 4s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Axiomatic Judgment</td>
+              <td>
+                Increases the Level of O Tides, I Have Returned by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Wrathful Recompense</td>
+              <td>
+                When using Charged Attack: Equitable Judgment, Neuvillette can
+                absorb nearby Sourcewater Droplets in an AoE. Each absorbed
+                Droplet will increase the duration of Charged Attack: Equitable
+                Judgment by 1s. Additionally, when Equitable Judgment hits
+                opponents, it will fire off 2 additional currents every 2s, each
+                of which will deal 10% of Neuvillette's Max HP as Hydro DMG. DMG
+                dealt this way will count as DMG dealt by Equitable Judgment.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/YUzbK2uG9q0?si=92KMwPWyTdmMGadm"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

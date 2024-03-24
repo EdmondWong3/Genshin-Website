@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Yaoyao</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span id="navigation-current-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span id="side-navigation-current-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">YAOYAO</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Yaoyao_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A young adepti disciple who is generous and sincere. She is used to
+          taking care of everyone around her. She trains under her master at
+          Liyue Harbor and regularly travels between the mountains and the city.
+          Although she does not say it outright, she prefers bustling city
+          markets to the tranquil mountains.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Toss 'N' Turn Spear</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive spear strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to lunge forward, dealing
+                  damage to opponents along the way.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Raphanus Sky Cluster</td>
+              <td>
+                <p>
+                  Calls upon "Yuegui: Throwing Mode," a special device created
+                  by a certain adeptus to help Yaoyao solve her problems. This
+                  skill will be used differently in Holding Mode.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>Enters Aiming Mode to adjust the throw direction.</p>
+                <p class="bold-and-bring-up">Yuegui: Throwing Mode</p>
+                <p>
+                  Throws out White Jade Radishes that will explode upon hitting
+                  characters or opponents, dealing Dendro DMG to opponents
+                  within a certain AoE, and healing characters within that same
+                  AoE based on Yaoyao's Max HP. If a radish does not hit either
+                  an opponent or a character, the radish will remain where it is
+                  and explode on contact with a character or opponent, or will
+                  explode after its duration expires. Yuegui: Throwing Mode will
+                  choose its radish-throw targets.
+                </p>
+                <ul>
+                  <li>
+                    If all nearby characters have more than 70% HP remaining,
+                    then it will throw the radish at a nearby opponent.
+                  </li>
+                  <li>
+                    If nearby characters have 70% or less HP remaining, it will
+                    throw a radish at the character with the lowest HP
+                    percentage remaining. If no opponents exist nearby, Yuegui
+                    will throw White Jade Radishes at characters even if they
+                    all have more than 70% HP remaining.
+                  </li>
+                </ul>
+                <p>
+                  A maximum of 2 instances Yuegui: Throwing Mode can exist at
+                  any one time.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Moonjade Descent</td>
+              <td>
+                <p>
+                  At the enjoinment of a certain adeptus, Yuegui's full
+                  potential can be unleashed in an emergency, dealing Dendro DMG
+                  to nearby opponents and entering an (in some sense)
+                  unsurpassed Adeptal Legacy state.
+                </p>
+                <p class="bold-and-bring-up">Adeptal Legacy</p>
+                <ul>
+                  <li>
+                    White Jade Radishes generated will be changed to heal and
+                    deal DMG according to this skill. Explosions will heal all
+                    nearby party members, and the Dendro DMG that they deal will
+                    be viewed as Elemental Burst DMG instead.
+                  </li>
+                  <li>
+                    Summons "Yuegui: Jumping Mode" at intervals until their
+                    limit has been reached. The behavior of this version of
+                    Yuegui is the same as that of "Yuegui: Throwing Mode" in the
+                    Elemental Skill, Raphanus Sky Cluster. A maximum of 3
+                    Yuegui: Jumping Mode can exist at any one time.
+                  </li>
+                  <li>Yaoyao's Movement SPD is increased by 15%.</li>
+                  <li>Yaoyao's Dendro RES will be increased.</li>
+                </ul>
+                <p>
+                  The Adeptal Legacy state will end once Yaoyao is off-field,
+                  and all remaining Yuegui: Jumping Mode will be cleared once
+                  this state ends.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Starscatter</td>
+              <td>
+                <p>
+                  While affected by the Adeptal Legacy state caused by Moonjade
+                  Descent, Yaoyao will constantly throw White Jade Radishes at
+                  nearby opponents when she is sprinting, jumping, or running.
+                  She can throw 1 White Jade Radish this way once every 0.6s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>In Others' Shoes</td>
+              <td>
+                <p>
+                  When White Jade Radishes explode, active characters within
+                  their AoE will regain HP every 1s based on 0.8% of Yaoyao's
+                  Max HP. This effect lasts 5s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Tailing on Tiptoes</td>
+              <td>
+                <p>
+                  When Yaoyao is in the party, your characters will not startle
+                  Crystalflies and certain other animals when getting near them.
+                  Check the "Other" sub-category of the "Living Beings /
+                  Wildlife" section in the Archive for creatures this skill
+                  works on.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Adeptus' Tutelage</td>
+              <td>
+                When White Jade Radishes explode, active characters within their
+                AoE will gain 15% Dendro DMG Bonus for 8s and have 15 Stamina
+                restored to them. This form of Stamina Restoration can only be
+                triggered every 5s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Innocent</td>
+              <td>
+                While affected by the Adeptal Legacy state caused by Moonjade
+                Descent, if White Jade Radish explosions damage opponents, 3
+                Energy will be restored to Yaoyao. This form of Energy
+                regeneration can occur once every 0.8s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Loyal and Kind</td>
+              <td>
+                Increases the Level of Raphanus Sky Cluster by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Winsome</td>
+              <td>
+                After using Raphanus Sky Cluster or Moonjade Descent, Yaoyao's
+                Elemental Mastery will be increased based on 0.3% of her Max HP
+                for 8s. The maximum Elemental Mastery she can gain this way is
+                120.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Compassionate</td>
+              <td>
+                Increases the Level of Moonjade Descent by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Beneficent</td>
+              <td>
+                For every 2 White Jade Radishes Yuegui: Throwing Mode throws
+                out, it will also throw a Mega Radish that will have a larger
+                AoE than the standard White Jade Radish and have the following
+                effects upon exploding:
+                <ul>
+                  <li>Deals AoE Dendro DMG based on 75% of Yaoyao's ATK.</li>
+                  <li>
+                    Restores HP for the active character based on 7.5% of
+                    Yaoyao's Max HP.
+                  </li>
+                </ul>
+                <p>
+                  Every Yuegui: Throwing Mode can throw out a maximum of 2 Mega
+                  Radishes.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/oaiqlIyIFNs?si=kbfSxzysjIHO7GGy"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Charlotte</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span id="navigation-current-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"
+          ><span id="side-navigation-current-item">CRYO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">CHARLOTTE</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Charlotte_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Indefatigable reporter of The Steambird, constantly on the hunt for
+          the "truth."
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Cool-Color Capture</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Taking aim at targets using Monsieur Verite, her custom
+                  Kamera, Charlotte performs up to 3 consecutive attacks,
+                  dealing Cryo DMG.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a fixed amount of Stamina, and after a moment's
+                  preparation, will deploy Monsieur Verite to deal AoE Cryo DMG.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Gathering the power of Cryo, Charlotte plunges toward the
+                  ground, dealing DMG to all opponents in her path and dealing
+                  AoE Cryo DMG upon landing.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Pneuma</p>
+                <p>
+                  At certain intervals, upon using a Charged Attack, Charlotte
+                  will cause a Spiritbreath Thorn to descend and pierce
+                  opponents, dealing Pneuma-aligned AoE Cryo DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Framing: Freezing Point Composition</td>
+              <td>
+                <p>
+                  Using the keen instincts of an ace reporter, Charlotte uses
+                  her photography skills to produce different effects based on
+                  whether the ability is Tapped or Held.
+                </p>
+                <p class="bold-and-bring-up">Tap</p>
+                <p>
+                  Takes a snapshot using Monsieur Verite, dealing AoE Cryo DMG
+                  to opponents in front of her and applying Snappy Silhouette to
+                  a maximum of 5 opponents. During this effect's duration, it
+                  will deal Cryo DMG to affected opponents at intervals.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>
+                  Popping Monsieur Verite's viewfinder open, Charlotte enters
+                  Composition Mode, and during this time, the viewfinder will
+                  expand as you hold until you reach a Finisher Frame state. In
+                  this state, Charlotte can move and change direction freely.
+                  When the hold state ends, Monsieur Verite will deal Cryo DMG
+                  to all opponents locked on within the viewfinder, and apply
+                  the same Snappy Silhouette as Tap Mode does to them. If you
+                  unleash this ability only after reaching Finisher Frame, you
+                  will instead apply Focused Impression, which lasts longer and
+                  deals more DMG, although the Skill CD will be longer.
+                  Composition Mode lasts a maximum of 15s and allows a maximum
+                  of 5 opponents to be selected.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Still Photo: Comprehensive Confirmation</td>
+              <td>
+                <p>
+                  Condensing ice to create The Steambird's signature, Charlotte
+                  creates a Newsflash Field that will deal AoE Cryo DMG and
+                  restores HP for all nearby party members based on Charlotte's
+                  ATK.
+                </p>
+                <p class="bold-and-bring-up">Newsflash Field</p>
+                <ul>
+                  <li>
+                    While the ability is active, Monsieur Verite will deal Cryo
+                    DMG at intervals to opponents within its AoE.
+                  </li>
+                  <li>
+                    Will continuously restore HP to active character(s) within
+                    its AoE based on Charlotte's ATK.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Moment of Impact</td>
+              <td>
+                <p>
+                  When opponents marked by "Focused Impression" are defeated,
+                  Framing: Freezing Point Composition's CD will be decreased by
+                  2s. This CD decrease can be triggered 4 times every 12s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Diversified Investigation</td>
+              <td>
+                <p>
+                  When the party contains 1/2/3 Fontainians other than herself,
+                  Charlotte gains a 5%/10%/15% Healing Bonus. When the party
+                  contains 1/2/3 non-Fontainians, Charlotte gains a 5%/10%/15%
+                  Cryo DMG Bonus.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>First-Person Shutter</td>
+              <td>
+                <p>
+                  After activating the Special Analysis Zoom Lens, Charlotte's
+                  "Framing: Freezing Point Composition" Hold Mode cannot trigger
+                  its original effects, but instead enables her to take photos
+                  in a rather unique manner...
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>A Need to Verify Facts</td>
+              <td>
+                After Still Photo: Comprehensive Confirmation heals a character,
+                it will mark them with Verification, which will heal them once
+                every 2s for 80% of Charlotte's ATK. This effect lasts 6s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>A Duty to Pursue Truth</td>
+              <td>
+                When using Framing: Freezing Point Composition, when Monsieur
+                Verite hits 1/2/3 (or more) opponents, Charlotte's own ATK will
+                be increased by 10%/20%/30% for 12s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>An Imperative to Independence</td>
+              <td>
+                Increases the Level of Still Photo: Comprehensive Confirmation
+                by 3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>A Responsibility to Oversee</td>
+              <td>
+                When Still Photo: Comprehensive Confirmation hits an opponent
+                marked by Snappy Silhouette or Focused Impression, it will deal
+                10% more DMG and restore 2 Energy to Charlotte. This restoration
+                can be triggered 5 times every 20s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>A Principle of Conscience</td>
+              <td>
+                Increases the Level of Framing: Freezing Point Composition by 3.
+                Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>A Summation of Interest</td>
+              <td>
+                When the active character's Normal and Charged Attacks hit an
+                opponent marked by Framing: Freezing Point Composition's Focused
+                Impression, Monsieur Verite will initiate a coordinated attack
+                that deals 180% of Charlotte's ATK as AoE Cryo DMG and heals
+                active character(s) within the AoE for 42% of Charlotte's ATK.
+                This effect can be triggered once every 6s and both DMG and
+                healing dealt in this way will be considered as having been done
+                by Charlotte's Elemental Burst.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/36kHDSzZ-sg?si=ckxcHvQL0IWQsgGX"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

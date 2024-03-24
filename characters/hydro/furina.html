@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Furina</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="side-navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">FURINA</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Furina_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          The "Regina of All Waters, Kindreds, Peoples and Laws" is deeply loved
+          by her people. She follows each and every trial held at the Opera
+          Epiclese with an inextinguishable passion, and is always acutely aware
+          of how the "audience" sees things.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Soloist's Solicitation</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to unleash a solo dance,
+                  dealing Physical DMG to nearby opponents and changing her
+                  Arkhe alignment. If Salon Members or Singer of Many Waters
+                  summoned by her Elemental Skill "Salon Solitaire" are present,
+                  their lineup will switch in response.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Seats Sacred and Secular</p>
+                <p>
+                  At intervals, when Furina's Normal Attacks hit, a Spiritbreath
+                  Thorn or a Surging Blade will descend based on her current
+                  alignment, dealing Hydro DMG based on her current alignment.
+                  When Furina takes the field, her starting Arkhe will be Ousia.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Salon Solitaire</td>
+              <td>
+                <p>
+                  Invites the guests of the Salon Solitaire to come forth and
+                  aid in Furina's performance. Will summon either the Salon
+                  Members or the Singer of Many Waters based on Furina's current
+                  Arkhe alignment.
+                </p>
+                <p class="bold-and-bring-up">Ousia</p>
+                <p>
+                  Foaming bubbles like celebrants shall dance, dealing AoE Hydro
+                  DMG based on Furina's Max HP and summoning 3 Salon Members:
+                  the Ball Octopus-shaped Gentilhomme Usher, the Bubbly
+                  Seahorse-shaped Surintendante Chevalmarin, and the Armored
+                  Crab-shaped Mademoiselle Crabaletta. They will attack nearby
+                  opponents at intervals, prioritizing the target of the active
+                  character, dealing Hydro DMG based on Max HP. When they
+                  attack, if character(s) with more than 50% HP are nearby, the
+                  Members will increase their current attack's power based on
+                  the number of such characters, and consume said characters'
+                  HP. If the characters who meet these requirements are 1/2/3/4
+                  (or more), the Members' attacks will deal 110%/120%/130%/140%
+                  of their original DMG.
+                </p>
+                <p class="bold-and-bring-up">Pneuma</p>
+                <p>
+                  Summons the Singer of Many Waters, who will heal nearby active
+                  character(s) based on Max HP at intervals. The Salon Members
+                  and Singer of Many Waters share a duration, and when Furina
+                  uses her Charged Attack to change the guest type, the new
+                  guests will inherit the initial duration. While the Salon
+                  Members and the Singer of Many Waters are on the field, Furina
+                  can move on the water's surface.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Let the People Rejoice</td>
+              <td>
+                <p>
+                  Rouses the impulse to revel, creating a stage of foam that
+                  will deal AoE Hydro DMG based on Furina's Max HP and cause
+                  nearby party members to enter the Universal Revelry state:
+                  During this time, when nearby party members' HP increases or
+                  decreases, 1 Fanfare point will be granted to Furina for each
+                  percentage point of their Max HP by which their HP changes. At
+                  the same time, Furina will increase the DMG dealt by and
+                  Incoming Healing Bonus of all nearby party members based on
+                  the amount of Fanfare she has. When the duration ends,
+                  Furina's Fanfare points will be cleared.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Endless Waltz</td>
+              <td>
+                <p>
+                  When the active character in your party receives healing, if
+                  the source of the healing is not Furina herself and the
+                  healing overflows, then Furina will heal nearby party members
+                  for 2% of their Max HP once every 2s within the next 4s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Unheard Confession</td>
+              <td>
+                <p>
+                  Every 1,000 points of Furina's Max HP can buff the different
+                  Arkhe-aligned Salon Solitaire in the following ways: Will
+                  increase Salon Member DMG dealt by 0.7%, up to a maximum of
+                  28%. Will decrease active character healing interval of the
+                  Singer of Many Waters by 0.4%, up to a maximum of 16%.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>The Sea Is My Stage</td>
+              <td>
+                <p>
+                  Xenochromatic Fontemer Aberrant ability CD decreased by 30%.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>"Love Is a Rebellious Bird That None Can Tame"</td>
+              <td>
+                When using Let the People Rejoice, Furina will gain 150 Fanfare.
+                Additionally, Furina's Fanfare limit is increased by 100.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>"A Woman Adapts Like Duckweed in Water"</td>
+              <td>
+                While Let the People Rejoice lasts, Furina's Fanfare gain from
+                increases or decreases in nearby characters' HP is increased by
+                250%. Each point of Fanfare above the limit will increase
+                Furina's Max HP by 0.35%. Her maximum Max HP increase is 140%.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>"My Secret Is Hidden Within Me, No One Will Know My Name"</td>
+              <td>
+                Increases the Level of Let the People Rejoice by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>"They Know Not Life, Who Dwelt in the Netherworld Not!"</td>
+              <td>
+                When the Salon Members from Salon Solitaire hit an opponent, or
+                the Singer of Many Waters restores HP to nearby active
+                characters, Furina will restore 4 Energy. This effect can be
+                triggered once every 5s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>"His Name I Now Know, It Is...!"</td>
+              <td>
+                Increases the Level of Salon Solitaire by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>"Hear Me — Let Us Raise the Chalice of Love!"</td>
+              <td>
+                <p>
+                  When using Salon Solitaire, Furina gains "Center of Attention"
+                  for 10s. Throughout the duration, Furina's Normal Attacks,
+                  Charged Attacks, and Plunging Attacks are converted into Hydro
+                  DMG which cannot be overridden by any other elemental
+                  infusion. DMG is also increased by an amount equivalent to 18%
+                  of Furina's max HP. Throughout the duration, Furina's Normal
+                  Attacks (not including Arkhe: Seats Sacred and Secular
+                  Attacks), Charged Attacks, and the impact of Plunging Attacks
+                  will cause different effects up to every 0.1s after hitting
+                  opponents depending on her current Arkhe alignment:
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Ousia</p>
+                <p>
+                  Every 1s, all nearby characters in the party will be healed by
+                  4% of Furina's max HP, for a duration of 2.9s. Triggering this
+                  effect again will extend its duration.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Pneuma</p>
+                <p>
+                  This Normal Attack (not including Arkhe: Seats Sacred and
+                  Secular Attacks), Charged Attack, or Plunging Attack ground
+                  impact DMG will be further increased by an amount equivalent
+                  to 25% of Furina's max HP. When any of the attacks mentioned
+                  previously hit an opponent, all nearby characters in the party
+                  will consume 1% of their current HP. During the duration of
+                  each instance of "Center of Attention," the above effects can
+                  be triggered up to 6 times. "Center of Attention" will end
+                  when its effects have triggered 6 times or when the duration
+                  expires.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/mRiNUBDPM8U?si=tYWgISdhkD4-gNGE"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

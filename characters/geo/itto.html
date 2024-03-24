@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Itto</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span id="navigation-current-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"
+          ><span id="side-navigation-current-item">GEO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">ITTO</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Itto_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Fast as the wind and mighty as thunder, he is an intrepid man with Oni
+          blood running through his veins.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Fight Club Legend</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Performs up to 4 consecutive strikes. When the 2nd and 4th
+                  strikes hit opponents, Itto will gain 1 and 2 stacks of
+                  Superlative Superstrength, respectively. Max 5 stacks.
+                  Triggering this effect will refresh the current duration of
+                  any existing stacks. Additionally, Itto's Normal Attack combo
+                  does not immediately reset after sprinting or using his
+                  Elemental Skill, "Masatsu Zetsugi: Akaushi Burst!"
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  When holding to perform a Charged Attack, Itto unleashes a
+                  series of Arataki Kesagiri slashes without consuming Stamina.
+                  Instead, each Arataki Kesagiri slash consumes 1 stack of
+                  Superlative Superstrength. When the final stack is consumed,
+                  Itto delivers a powerful final slash. If no stacks of
+                  Superlative Superstrength are available, Itto will perform a
+                  single Saichimonji Slash.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground, damaging opponents
+                  along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Masatsu Zetsugi: Akaushi Burst!</td>
+              <td>
+                <p>
+                  Hurls Ushi, the young akaushi bull and auxiliary member of the
+                  Arataki Gang, dealing Geo DMG to opponents on hit. When Ushi
+                  hits opponents, Arataki Itto gains 1 stack of Superlative
+                  Superstrength. Ushi will remain on the field and provide
+                  support in the following ways:
+                </p>
+                <ul>
+                  <li>Taunts surrounding opponents and draws their attacks.</li>
+                  <li>
+                    Inherits HP based on a percentage of Arataki Itto's Max HP.
+                  </li>
+                  <li>
+                    When Ushi takes DMG, Arataki Itto gains 1 stack of
+                    Superlative Superstrength. Only 1 stack can be gained in
+                    this way every 2s.
+                  </li>
+                  <li>
+                    Ushi will flee when its HP reaches 0 or its duration ends.
+                    It will grant Arataki Itto 1 stack of Superlative
+                    Superstrength when it leaves.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>
+                  Adjust throwing angle. Ushi is considered a Geo construct.
+                  Arataki Itto can only deploy 1 Ushi on the field at any one
+                  time.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Arataki Ichiban</td>
+              <td>
+                <p>
+                  When Arataki Itto uses consecutive Arataki Kesagiri, he
+                  obtains the following effects:
+                </p>
+                <ul>
+                  <li>
+                    Each slash increases the ATK SPD of the next slash by 10%.
+                    Max ATK SPD increase is 30%.
+                  </li>
+                  <li>Increases his resistance to interruption.</li>
+                </ul>
+                <p>
+                  These effects will be cleared once he stops performing
+                  consecutive slashes.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Bloodline of the Crimson Oni</td>
+              <td>
+                <p>
+                  Arataki Kesagiri DMG is increased by 35% of Arataki Itto's
+                  DEF.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Homuncular Nature</td>
+              <td>
+                <p>
+                  Using Rite of Progeniture: Tectonic Tide increases the
+                  Elemental Mastery of nearby party members by 125 for 10s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Woodchuck Chucked</td>
+              <td>
+                <p>
+                  When a party member uses attacks to obtain wood from a tree,
+                  they have a 25% chance to get an additional log of wood.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Stay a While and Listen Up</td>
+              <td>
+                After using Royal Descent: Behold, Itto the Evil!, Arataki Itto
+                gains 2 stacks of Superlative Superstrength. After 1s, Itto will
+                gain 1 stack of Superlative Superstrength every 0.5s for 1.5s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Gather 'Round, It's a Brawl!</td>
+              <td>
+                After using Royal Descent: Behold, Itto the Evil!, each party
+                member whose Element is Geo will decrease that skill's CD by
+                1.5s and restore 6 Energy to Arataki Itto. CD can be decreased
+                by up to 4.5s in this manner. Max 18 Energy can be restored in
+                this manner.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Horns Lowered, Coming Through</td>
+              <td>
+                Increases the Level of Masatsu Zetsugi: Akaushi Burst! by 3.
+                Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Jailhouse Bread and Butter</td>
+              <td>
+                When the Raging Oni King state caused by Royal Descent: Behold,
+                Itto the Evil! ends, all nearby party members gain 20% DEF and
+                20% ATK for 10s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>10 Years of Hanamizaka Fame</td>
+              <td>
+                Increases the Level of Royal Descent: Behold, Itto the Evil! by
+                3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Arataki Itto, Present!</td>
+              <td>
+                Arataki Itto's Charged Attacks deal +70% Crit DMG. Additionally,
+                when he uses Arataki Kesagiri, he has a 50% chance to not
+                consume stacks of Superlative Superstrength.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/KJbR7wDG-Ek?si=uU3ERNDI7YXb4wNW"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

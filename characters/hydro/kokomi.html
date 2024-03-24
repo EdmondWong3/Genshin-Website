@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Kokomi</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="side-navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">KOKOMI</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Kokomi_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Kokomi is the Divine Priestess of Watatsumi Island, and also serves as
+          its supreme leader. She is well-versed in the art of war, is good at
+          strategizing, and has keen insights into military affairs. She is also
+          adept at handling domestic affairs, diplomacy, and other matters.
+          Still, this unfathomable leader has a mysterious side to her...
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>The Shape of Water</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Performs up to 3 consecutive attacks that take the form of
+                  swimming fish, dealing Hydro DMG.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to deal AoE Hydro DMG
+                  after a short casting time.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Gathering the might of Hydro, Kokomi plunges towards the
+                  ground from mid-air, damaging all opponents in her path. Deals
+                  AoE Hydro DMG upon impact with the ground.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Kurage's Oath</td>
+              <td>
+                <p>
+                  Summons a "Bake-Kurage" created from water that can heal her
+                  allies. Using this skill will apply the Wet status to
+                  Sangonomiya Kokomi.
+                </p>
+                <p class="bold-and-bring-up">Bake-Kurage</p>
+                <p>
+                  Deals Hydro DMG to surrounding opponents and heal nearby
+                  active characters at fixed intervals. This healing is based on
+                  Kokomi's Max HP.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Nereid's Ascension</td>
+              <td>
+                <p>
+                  Summons the might of Watatsumi, dealing Hydro DMG to
+                  surrounding opponents, before robing Kokomi in a Ceremonial
+                  Garment made from the flowing waters of Sangonomiya.
+                </p>
+                <p class="bold-and-bring-up">Ceremonial Garment</p>
+                <ul>
+                  <li>
+                    Sangonomiya Kokomi's Normal Attack, Charged Attack and
+                    Bake-Kurage DMG are increased based on her Max HP.
+                  </li>
+                  <li>
+                    When her Normal and Charged Attacks hit opponents, Kokomi
+                    will restore HP for all nearby party members, and the amount
+                    restored is based on her Max HP.
+                  </li>
+                  <li>
+                    Increases Sangonomiya Kokomi's resistance to interruption
+                    and allows her to walk on the water's surface.
+                  </li>
+                </ul>
+                <p>
+                  These effects will be cleared once Sangonomiya Kokomi leaves
+                  the field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Tamakushi Casket</td>
+              <td>
+                <p>
+                  If Sangonomiya Kokomi's own Bake-Kurage are on the field when
+                  she uses Nereid's Ascension, the Bake-Kurage's duration will
+                  be refreshed.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Song of Pearls</td>
+              <td>
+                <p>
+                  While donning the Ceremonial Garment created by Nereid's
+                  Ascension, the Normal and Charged Attack DMG Bonus Sangonomiya
+                  Kokomi gains based on her Max HP will receive a further
+                  increase based on 15% of her Healing Bonus.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Princess of Watatsumi</td>
+              <td>
+                <p>
+                  Decreases swimming Stamina consumption for your own party
+                  members by 20%. Not stackable with Passive Talents that
+                  provide the exact same effects.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Passive</td>
+              <td>Flawless Strategy</td>
+              <td>
+                <p>
+                  Sangonomiya Kokomi has a 25% Healing Bonus, but a 100%
+                  decrease in CRIT Rate.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>At Water's Edge</td>
+              <td>
+                While donning the Ceremonial Garment created by Nereid's
+                Ascension, the final Normal Attack in Sangonomiya Kokomi's combo
+                will unleash a swimming fish to deal 30% of her Max HP as Hydro
+                DMG. This DMG is not considered Normal Attack DMG.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>The Clouds Like Waves Rippling</td>
+              <td>
+                Sangonomiya Kokomi gains the following Healing Bonuses with
+                regard to characters with 50% or less HP via the following
+                methods:
+              </td>
+              <ul>
+                <li>Kurage's Oath Bake-Kurage: 4.5% of Kokomi's Max HP.</li>
+                <li>
+                  Nereid's Ascension Normal and Charged Attacks: 0.6% of
+                  Kokomi's Max HP.
+                </li>
+              </ul>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>The Moon, A Ship O'er the Seas</td>
+              <td>
+                Increases the Level of Nereid's Ascension by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>The Moon Overlooks the Waters</td>
+              <td>
+                While donning the Ceremonial Garment created by Nereid's
+                Ascension, Sangonomiya Kokomi's Normal Attack SPD is increased
+                by 10%, and Normal Attacks that hit opponents will restore 0.8
+                Energy for her. This effect can occur once every 0.2s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>All Streams Flow to the Sea</td>
+              <td>
+                Increases the Level of Kurage's Oath by 3. Maximum upgrade level
+                is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Sango Isshin</td>
+              <td>
+                While donning the Ceremonial Garment created by Nereid's
+                Ascension, Sangonomiya Kokomi gains a 40% Hydro DMG Bonus for 4s
+                when her Normal and Charged Attacks heal, or would heal, any
+                party member with 80% or more HP.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/Uo9NzSILyys?si=E4KKdLCaUgWC28SM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

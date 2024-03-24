@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Alhaitham</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span id="navigation-current-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span id="side-navigation-current-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">ALHAITHAM</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Alhaitham_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          The current scribe of the Sumeru Akademiya, a man endowed with
+          extraordinary intelligence and talent. He lives free — free from the
+          searching eyes of ordinary people, anyway.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Abductive Reasoning</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 5 rapid strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to unleash 2 rapid sword
+                  strikes.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Universality: An Elaboration on Form</td>
+              <td>
+                <p>
+                  Rushes forward, dealing Dendro DMG to nearby opponents when
+                  the rush ends, causing a Chisel-Light Mirror to form. Holding
+                  this skill will cause it to behave differently.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>
+                  Enters Aiming Mode to adjust the direction of Alhaitham's rush
+                  attack.
+                </p>
+                <p class="bold-and-bring-up">Chisel-Light Mirror</p>
+                <p>
+                  When this skill is unleashed, Alhaitham will generate 1
+                  Chisel-Light Mirror. If there are no Mirrors at this time, he
+                  will generate 1 additional Mirror. Chisel-Light Mirrors will
+                  have the following properties:
+                </p>
+                <ul>
+                  <li>
+                    When he possesses Chisel-Light Mirrors, Alhaitham's Normal,
+                    Charged, and Plunging Attacks will be converted to Dendro
+                    DMG. This cannot be overridden.
+                  </li>
+                  <li>
+                    When attacks of the aforementioned kinds hit opponents, the
+                    Chisel-Light Mirrors will unleash a Projection Attack that
+                    deals AoE Dendro DMG based on the number of Mirrors on the
+                    field.
+                  </li>
+                  <li>A total of 3 Chisel-Light Mirrors can exist at once.</li>
+                  <li>
+                    The Chisel-Light Mirrors will disappear one after the other
+                    over time, and will all disappear when Alhaitham leaves the
+                    field.
+                  </li>
+                </ul>
+                <p>
+                  While in the Rushing Ice state, Aloy cannot obtain new Coil
+                  stacks. Coil effects will be cleared 30s after Aloy leaves the
+                  field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Particular Field: Fetters of Phenomena</td>
+              <td>
+                <p>
+                  Creates a Particular Binding Field and deals multiple
+                  instances of AoE Dendro DMG. If Chisel-Light Mirrors exist
+                  when this ability is unleashed, all such Mirrors will be
+                  consumed and increase the number of DMG instances dealt. 2s
+                  after this ability is unleashed, if 0/1/2/3 Mirrors were
+                  consumed, Alhaitham will generate 3/2/1/0 new Mirrors in turn.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Four-Causal Correction</td>
+              <td>
+                <p>
+                  When Alhaitham's Charged or Plunging Attacks hit opponents,
+                  they will generate 1 Chisel-Light Mirror. This effect can be
+                  triggered once every 12s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Mysteries Laid Bare</td>
+              <td>
+                <p>
+                  Each point of Alhaitham's Elemental Mastery will increase the
+                  DMG dealt by Projection Attacks and Particular Field: Fetters
+                  of Phenomena by 0.1%. The maximum DMG increase this way for
+                  both these abilities is 100%.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Law of Reductive Overdetermination</td>
+              <td>
+                <p>
+                  When Alhaitham crafts Weapon Ascension Materials, he has a 10%
+                  chance to receive double the product.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Intuition</td>
+              <td>
+                When a Projection Attack hits an opponent, Universality: An
+                Elaboration on Form's CD is decreased by 1.2s. This effect can
+                be triggered once every 1s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Debate</td>
+              <td>
+                When Alhaitham generates a Chisel-Light Mirror, his Elemental
+                Mastery will be increased by 50 for 8 seconds, max 4 stacks.
+                Each stack's duration is counted independently. This effect can
+                be triggered even when the maximum number of Chisel-Light
+                Mirrors has been reached.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Negation</td>
+              <td>
+                Increases the Level of Universality: An Elaboration on Form by
+                3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Elucidation</td>
+              <td>
+                When Particular Field: Fetters of Phenomena is unleashed, the
+                following effects will become active based on the number of
+                Chisel-Light Mirrors consumed and created this time around:
+                <ul>
+                  <li>
+                    Each Mirror consumed will increase the Elemental Mastery of
+                    all other nearby party members by 30 for 15s.
+                  </li>
+                  <li>
+                    Each Mirror generated will grant Alhaitham a 10% Dendro DMG
+                    Bonus for 15s.
+                  </li>
+                </ul>
+                The pre-existing duration of the aforementioned effects will be
+                cleared if you use Particular Field: Fetters of Phenomena again
+                while they are in effect.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Sagacity</td>
+              <td>
+                Increases the Level of Particular Field: Fetters of Phenomena by
+                3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Structuration</td>
+              <td>
+                Alhaitham gains the following effects:
+                <ul>
+                  <li>
+                    2 seconds after Particular Field: Fetters of Phenomena is
+                    unleashed, he will generate 3 Chisel-Light Mirrors
+                    regardless of the number of mirrors consumed.
+                  </li>
+                  <li>
+                    If Alhaitham generates Chisel-Light Mirrors when their
+                    numbers have already maxed out, his CRIT Rate and CRIT DMG
+                    will increase by 10% and 70% respectively for 6s. If this
+                    effect is triggered again during its initial duration, the
+                    duration remaining will be increased by 6s.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/5zbgCrxiE8Q?si=PF6XJgd-jx8xSI_5"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

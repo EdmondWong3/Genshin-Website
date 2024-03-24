@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Dendro</title>
+    <link 
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque" 
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png">
+    <link rel="stylesheet" href="/stylesheets/general.css">
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css">
+    <link rel="stylesheet" href="/stylesheets/character-catalog.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+  </head>
+
+  <body>
+    <div id="loading-screen-container">
+      <img
+        src="/images/misc/loading-screen-gif.gif"
+        alt=""
+        id="loading-screen-gif"
+      />
+    </div>
+
+    <div id="content-container">
+      <div id="overlay"></div>
+  
+      <div id="navigation-bar">
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/Hamburger_Menu_Icon.png"
+            alt=""
+            id="hamburger-menu-icon"
+          />
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/paimon-icon.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/homepage.html"
+            ><span class="navigation-item">GENSHIN</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_anemo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/ameno.html"
+            ><span class="navigation-item">AMENO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_cryo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_dendro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/dendro.html"><span id="navigation-current-item">DENDRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_electro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_geo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_hydro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_pyro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/elemental_reaction_icon.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/reactions.html"
+            ><span class="navigation-item">REACTIONS</span></a
+          >
+        </div>
+        <div class="divider"></div>
+      </div>
+  
+      <div id="side-navigation-bar">
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/paimon-icon.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/homepage.html"
+            ><span class="side-navigation-item">GENSHIN</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_anemo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/ameno.html"
+            ><span class="side-navigation-item">AMENO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_cryo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/cryo.html"
+            ><span class="side-navigation-item">CRYO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_dendro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/dendro.html"
+            ><span id="side-navigation-current-item">DENDRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_electro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/electro.html"
+            ><span class="side-navigation-item">ELECTRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_geo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_hydro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/hydro.html"
+            ><span class="side-navigation-item">HYDRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_pyro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/pyro.html"
+            ><span class="side-navigation-item">PYRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/elemental_reaction_icon.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/reactions.html"
+            ><span class="side-navigation-item">REACTIONS</span></a
+          >
+        </div>
+        <div class="divider"></div>
+      </div>
+  
+      <div id="element-characters-container">
+        <div id="main-header-container">
+          <img src="/images/element-icons/element_dendro.png" alt="" id="element-icon">
+          <h1 id="main-header">DENDRO CHARACTERS</h1>
+        </div>
+  
+        <div class="row-container">
+          <div class="character-container">
+            <a href="/characters/dendro/alhaitham.html"><img src="/images/characters/Icons/Alhaitham_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/alhaitham.html" class="character-name">Alhaitham</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/baizhu.html"><img src="/images/characters/Icons/Baizhu_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/baizhu.html" class="character-name">Baizhu</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/collei.html"><img src="/images/characters/Icons/Collei_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/collei.html" class="character-name">Collei</a>
+          </div>
+        </div>
+  
+        <div class="row-container">
+          <div class="character-container">
+            <a href="/characters/dendro/kaveh.html"><img src="/images/characters/Icons/Kaveh_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/kaveh.html" class="character-name">Kaveh</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/kirara.html"><img src="/images/characters/Icons/Kirara_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/kirara.html" class="character-name">Kirara</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/nahida.html"><img src="/images/characters/Icons/Nahida_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/nahida.html" class="character-name">Nahida</a>
+          </div>
+        </div> 
+  
+        <div class="row-container">
+          <div class="character-container">
+            <a href="/characters/dendro/tighnari.html"><img src="/images/characters/Icons/Tighnari_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/tighnari.html" class="character-name">Tighnari</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/traveler.html"><img src="/images/characters/Icons/Aether_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/traveler.html" class="character-name">Traveler</a>
+          </div>
+          <div class="character-container">
+            <a href="/characters/dendro/yaoyao.html"><img src="/images/characters/Icons/Yaoyao_Icon.png" alt="" class="character-icon"></a>
+            <a href="/characters/dendro/yaoyao.html" class="character-name">Yaoyao</a>
+          </div>
+        </div> 
+      
+        <div id="footer-container">
+          <div id="list-of-contacts">
+            <a target="_blank" href="https://github.com/EdmondWong3"
+              ><img
+                src="/images/contact-icons/github-icon.png"
+                alt=""
+                id="github-icon"
+                class="contact-icon"
+            /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+              ><img
+                src="/images/contact-icons/linkedin-icon.png"
+                alt=""
+                id="linkedin-icon"
+                class="contact-icon"
+            /></a>
+            <a href="mailto:edmondjwong12@gmail.com"
+              ><img
+                src="/images/contact-icons/mail-icon.png"
+                alt=""
+                id="mail-icon"
+                class="contact-icon"
+            /></a>
+          </div>
+          <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+        </div>
+    </div>
+
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

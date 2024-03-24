@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Zhongli</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span id="navigation-current-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"
+          ><span id="side-navigation-current-item">GEO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">ZHONGLI</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Zhongli_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Wangsheng Funeral Parlor's mysterious consultant. Handsome, elegant,
+          and surpassingly learned. Though no one knows where Zhongli is from,
+          he is a master of courtesy and rules. From his seat at Wangsheng
+          Funeral Parlor, he performs all manner of rituals.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Rain of Stone</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 6 consecutive spear strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to lunge forward, causing
+                  stone spears to fall along his path.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Dominus Lapidis</td>
+              <td>
+                <p>
+                  Every mountain, rock and inch of land is filled with the power
+                  of Geo, but those who can wield such powers freely are few and
+                  far between.
+                </p>
+                <p class="bold-and-bring-up">Press/Tap</p>
+                <p>Commands the power of earth to create a Stone Stele.</p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>
+                  Causes nearby Geo energy to explode, causing the following
+                  effects:
+                </p>
+                <ul>
+                  <li>
+                    If their maximum number hasn't been reached, creates a Stone
+                    Stele.
+                  </li>
+                  <li>
+                    Creates a shield of jade. The shield's DMG Absorption scales
+                    based on Zhongli's Max HP.
+                  </li>
+                  <li>Deals AoE Geo DMG.</li>
+                  <li>
+                    If there are nearby targets with the Geo element, it will
+                    drain a large amount of Geo element from a maximum of 2 such
+                    targets. This effect does not cause DMG.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Stone Stele</p>
+                <p>
+                  When created, deals AoE Geo DMG. Additionally, it will
+                  intermittently resonate with other nearby Geo constructs,
+                  dealing Geo DMG to surrounding opponents. The Stone Stele is
+                  considered a Geo construct that can both be climbed and used
+                  to block attacks. Only one Stele created by Zhongli himself
+                  may initially exist at any one time.
+                </p>
+                <p class="bold-and-bring-up">Jade Shield</p>
+                <p>
+                  Possesses 150% DMG Absorption against all Elemental and
+                  Physical DMG. Characters protected by the Jade Shield will
+                  decrease the Elemental RES and Physical RES of opponents in a
+                  small AoE by 20%. This effect cannot be stacked.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Planet Befall</td>
+              <td>
+                <p>
+                  Brings a falling meteor down to earth, dealing massive Geo DMG
+                  to opponents caught in its AoE and applying the Petrification
+                  status to them.
+                </p>
+                <p class="bold-and-bring-up">Petrification</p>
+                <p>
+                  Opponents affected by the Petrification status cannot move.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Resonant Waves</td>
+              <td>
+                <p>When the Jade Shield takes DMG, it will Fortify:</p>
+                <ul>
+                  <li>
+                    Fortified characters have 5% increased Shield Strength.
+                  </li>
+                </ul>
+                <p>
+                  Can stack up to 5 times, and lasts until the Jade Shield
+                  disappears.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Dominance of Earth</td>
+              <td>
+                <p>Zhongli deals bonus DMG based on his Max HP:</p>
+                <ul>
+                  <li>
+                    Normal Attack, Charged Attack, and Plunging Attack DMG is
+                    increased by 1.39% of Max HP.
+                  </li>
+                  <li>
+                    Dominus Lapidis' Stone Stele, resonance, and hold DMG is
+                    increased by 1.9% of Max HP.
+                  </li>
+                  <li>Planet Befall's DMG is increased by 33% of Max HP.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Arcanum of Crystal</td>
+              <td>
+                <p>
+                  Refunds 15% of the ore used when crafting Polearm-type
+                  weapons.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Rock, the Backbone of Earth</td>
+              <td>
+                Increases the maximum number of Stone Steles created by Dominus
+                Lapidis that may exist simultaneously to 2.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Stone, the Cradle of Jade</td>
+              <td>
+                Planet Befall grants nearby characters on the field a Jade
+                Shield when it descends.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Jade, Shimmering through Darkness</td>
+              <td>
+                Increases the Level of Dominus Lapidis by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Topaz, Unbreakable and Fearless</td>
+              <td>
+                Increases Planet Befall's AoE by 20% and increases the duration
+                of Planet Befall's Petrification effect by 2s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Lazuli, Herald of the Order</td>
+              <td>
+                Increases the Level of Planet Befall by 3. Maximum upgrade level
+                is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Chrysos, Bounty of Dominator</td>
+              <td>
+                When the Jade Shield takes DMG, 40% of that incoming DMG is
+                converted to HP for the current character. A single instance of
+                regeneration cannot exceed 8% of that character's Max HP.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/7JQQ9BUAzYA?si=4ldshFQS96Vh2_yC"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

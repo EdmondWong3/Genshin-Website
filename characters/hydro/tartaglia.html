@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Tartaglia</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span id="side-navigation-current-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">TARTAGLIA</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Tartaglia_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Meet Tartaglia — the cunning Snezhnayan whose unpredictable
+          personality keeps people guessing his every move. Don't be under any
+          illusion as to what he might be thinking or what his intentions are.
+          Just remember this: Behind that innocent, childlike exterior lies a
+          finely honed instrument of war.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Cutting Torrent</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 6 consecutive shots with a bow.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Performs a more precise Aimed Shot with increased DMG. While
+                  aiming, the power of Hydro will accumulate on the arrowhead.
+                  An arrow fully charged with the torrent will deal Hydro DMG
+                  and apply the Riptide status.
+                </p>
+                <p class="bold-and-bring-up">Riptide</p>
+                <p>
+                  Opponents affected by Riptide will suffer from AoE Hydro DMG
+                  effects when attacked by Tartaglia in various ways. DMG dealt
+                  in this way is considered Normal Attack DMG.
+                </p>
+                <ul>
+                  <li>
+                    Riptide Flash: A fully-charged Aimed Shot that hits an
+                    opponent affected by Riptide deals consecutive bouts of AoE
+                    DMG. Can occur once every 0.7s.
+                  </li>
+                  <li>
+                    Riptide Burst: Defeating an opponent affected by Riptide
+                    creates a Hydro burst that inflicts the Riptide status on
+                    nearby opponents hit.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Fires off a shower of arrows in mid-air before falling and
+                  striking the ground, dealing AoE DMG upon impact. When
+                  Tartaglia is in Foul Legacy: Raging Tide's Melee Stance, he
+                  cannot perform a plunging attack.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Foul Legacy: Raging Tide</td>
+              <td>
+                <p>
+                  Unleashes a set of weaponry made of pure water, dealing Hydro
+                  DMG to surrounding opponents and entering Melee Stance. In
+                  this Stance, Tartaglia's Normal and Charged Attacks are
+                  converted to Hydro DMG that cannot be overridden by any other
+                  elemental infusion and change as follows:
+                </p>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 6 consecutive Hydro strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to unleash a cross slash,
+                  dealing Hydro DMG.
+                </p>
+                <p class="bold-and-bring-up">Riptide Slash</p>
+                <p>
+                  Hitting an opponent affected by Riptide with a melee attack
+                  unleashes a Riptide Slash that deals AoE Hydro DMG. DMG dealt
+                  in this way is considered Elemental Skill DMG, and can only
+                  occur once every 1.5s. After 30s, or when the ability is
+                  unleashed again, this skill will end. Tartaglia will return to
+                  his Ranged Stance and this ability will enter CD. The longer
+                  Tartaglia stays in his Melee Stance, the longer the CD. If the
+                  return to a ranged stance occurs automatically after 30s, the
+                  CD is even longer.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Havoc: Obliteration</td>
+              <td>
+                <p>
+                  Performs different attacks based on what stance Tartaglia is
+                  in when casting.
+                </p>
+                <p class="bold-and-bring-up">Ranged Stance: Flash of Havoc</p>
+                <p>
+                  Swiftly fires a Hydro-imbued magic arrow, dealing AoE Hydro
+                  DMG and applying the Riptide status. Returns a portion of its
+                  Energy Cost after use.
+                </p>
+                <p class="bold-and-bring-up">
+                  Melee Stance: Light of Obliteration
+                </p>
+                <p>
+                  Performs a slash with a large AoE, dealing massive Hydro DMG
+                  to all surrounding opponents, which triggers Riptide Blast.
+                </p>
+                <p class="bold-and-bring-up">Riptide Blast</p>
+                <p>
+                  When the obliterating waters hit an opponent affected by
+                  Riptide, it clears their Riptide status and triggers a Hydro
+                  Explosion that deals AoE Hydro DMG. DMG dealt in this way is
+                  considered Elemental Burst DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Never Ending</td>
+              <td>
+                <p>Extends Riptide duration by 8s.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Sword of Torrents</td>
+              <td>
+                <p>
+                  When Tartaglia is in Foul Legacy: Raging Tide's Melee stance,
+                  on dealing a CRIT hit, Normal and Charged Attacks apply the
+                  Riptide status effects to opponents.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Master of Weaponry</td>
+              <td>
+                <p>
+                  Increases your own party members' Normal Attack Level by 1.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Foul Legacy: Tide Withholder</td>
+              <td>Decreases the CD of Foul Legacy: Raging Tide by 20%</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Foul Legacy: Understream</td>
+              <td>
+                When opponents affected by Riptide are defeated, Tartaglia
+                regenerates 4 Elemental Energy.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Abyssal Mayhem: Vortex of Turmoil</td>
+              <td>
+                Increases the Level of Foul Legacy: Raging Tide by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Abyssal Mayhem: Hydrospout</td>
+              <td>
+                If Tartaglia is in Foul Legacy: Raging Tide's Melee Stance,
+                triggers Riptide Slash against opponents on the field affected
+                by Riptide every 4s, otherwise, triggers Riptide Flash. Riptide
+                Slashes and Riptide Flashes triggered by this Constellation
+                effect are not subject to the time intervals that would
+                typically apply to these two Riptide effects, nor do they have
+                any effect on those time intervals.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Havoc: Formless Blade</td>
+              <td>
+                Increases the Level of Havoc: Obliteration by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Havoc: Annihilation</td>
+              <td>
+                When Havoc: Obliteration is cast in Melee Stance, the CD of Foul
+                Legacy: Raging Tide is reset. This effect will only take place
+                once Tartaglia returns to his Ranged Stance.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/esQi-FO4S7c?si=uIrEB3gOT6V6NzLm"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

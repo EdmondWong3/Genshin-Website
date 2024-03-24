@@ -1,0 +1,134 @@
+#homepage-title-screen-container {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("/images/homepage/genshin_homepage_background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homepage-title,
+#down-arrow-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#homepage-title {
+  width: 25%;
+  top: 35%;
+}
+
+#down-arrow-icon {
+  width: 3%;
+  top: 75%;
+}
+
+#down-arrow-icon:not(:hover) {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+#down-arrow-icon:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#homepage-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#homepage-game-description-container {
+  position: relative;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  text-align: center;
+}
+
+#game-description-header {
+  font-size: 50px;
+  letter-spacing: 12px;
+  margin-top: 80px;
+}
+
+#game-description {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+#download-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 9%;
+}
+
+#download-header,
+#download-link {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+#download-link {
+  text-decoration: underline;
+}
+
+iframe {
+  width: 60%;
+  aspect-ratio: 17 / 10;
+}
+
+/*
+* Adjust values for mobile devices and smaller screen sizes.
+*/
+@media only screen and (max-width: 1500px) {
+  #homepage-title-screen-container {
+    height: 100vh;
+  }
+
+  #homepage-background {
+    object-fit: cover;
+  }
+
+  #homepage-title {
+    width: 35%;
+  }
+
+  #down-arrow-icon {
+    width: 5%;
+  }
+
+  #showcase-video {
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #homepage-title {
+    width: 45%;
+  }
+
+  #down-arrow-icon {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #homepage-title {
+    width: 70%;
+  }
+
+  #down-arrow-icon {
+    width: 15%;
+  }
+}

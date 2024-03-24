@@ -1,0 +1,147 @@
+#reaction-tables-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#elemental-reaction-icon {
+  width: 75px;
+  height: 75px;
+  margin-right: 25px;
+}
+
+#main-header {
+  font-size: 50px;
+  letter-spacing: 5px;  
+}
+
+.reaction-table {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-collapse: collapse;
+  margin: 25px 25px 50px 25px;
+  width:30%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.reaction-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* 
+* Makes every other row of the table a different color to give it more details.
+*/
+.reaction-table tbody tr:nth-of-type(odd) {
+  background-color: #f3f2f2;
+}
+
+.reaction-table th,
+.reaction-table td {
+  padding: 6px 8px;
+}
+
+.notes-section {
+  text-align: left;
+}
+
+#ameno-header,
+#cryo-header,
+#dendro-header,
+#electro-header,
+#geo-header,
+#hydro-header,
+#pyro-header {
+  font-size: 30px;
+  font-weight: 700;
+  color:white;
+  letter-spacing: 2px;
+}
+
+#ameno-header {
+  background-color: rgb(117,194,170);
+}
+
+#ameno-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(117,194,170);
+}
+
+#cryo-header {
+  background-color: rgb(160,215,228);
+}
+
+#cryo-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(160,215,228);
+}
+
+#dendro-header {
+  background-color: rgb(166,201,56);
+}
+
+#dendro-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(166,201,56);
+}
+
+#electro-header {
+  background-color: rgb(176,143,194);
+}
+
+#electro-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(176,143,194);
+}
+
+#geo-header {
+  background-color: rgb(250, 182, 50);
+}
+
+#geo-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(250, 182, 50);
+}
+
+#hydro-header {
+  background-color: rgb(75, 195, 241);
+}
+
+#hydro-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(75, 195, 241);
+}
+
+#pyro-header {
+  background-color: rgb(239,122,53);
+}
+
+#pyro-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgb(239,122,53);
+}
+
+/*
+* Adjust values for mobile devices and smaller screen sizes.
+*/
+@media only screen and (max-width: 1500px) {
+  .reaction-table {
+    width: 85%;
+  }
+
+  #elemental-reaction-icon {
+    display: none;
+  }
+
+  #main-header {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+
+
+

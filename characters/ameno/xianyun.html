@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Xianyun</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="side-navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">XIANYUN</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Xianyun_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A mysterious woman who has just moved to Liyue Harbor and claims to be
+          reserved, quiet, and socially inept.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Word of Wind and Flower</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Summons swirling winds to perform up to 4 attacks, dealing
+                  Anemo DMG.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina and launches a Breeze
+                  Bolt in a straight line that deals Anemo DMG to opponents
+                  along its path.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Gathers the power of Anemo and plunges towards the ground from
+                  mid-air, damaging all opponents in her path. Deals AoE Anemo
+                  DMG upon impact with the ground.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>White Clouds at Dawn</td>
+              <td>
+                <p>
+                  Xianyun enters the Cloud Transmogrification state, in which
+                  she will not take Fall DMG, and uses Skyladder once. In this
+                  state, her Plunging Attack will be converted into Driftcloud
+                  Wave instead, which deals AoE Anemo DMG and ends the Cloud
+                  Transmogrification state. This DMG is considered Plunging
+                  Attack DMG. Each use of Skyladder while in this state
+                  increases the DMG and AoE of the next Driftcloud Wave used.
+                </p>
+                <p class="bold-and-bring-up">Skyladder</p>
+                <p>
+                  Can be used while in mid-air. Xianyun leaps forward, dealing
+                  Anemo DMG to targets along her path. During each Cloud
+                  Transmogrification state Xianyun enters, Skyladder may be used
+                  up to 3 times and only 1 instance of Skyladder DMG can be
+                  dealt to any one opponent. If Skyladder is not used again in a
+                  short period, the Cloud Transmogrification state will be
+                  canceled.
+                </p>
+                <p>
+                  If Xianyun does not use Driftcloud Wave while in this state,
+                  the next CD of White Clouds at Dawn will be decreased by 3s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Stars Gather at Dusk</td>
+              <td>
+                <p>
+                  Brings forth a sacred breeze that deals AoE Anemo DMG and
+                  heals all nearby characters based on Xianyun's ATK. It will
+                  also summon the "Starwicker" mechanism.
+                </p>
+                <p class="bold-and-bring-up">Starwicker</p>
+                <ul>
+                  <li>
+                    Continuously follows the active character and periodically
+                    heals all nearby party members based on Xianyun's ATK.
+                  </li>
+                  <li>
+                    Starts with 8 stacks of Adeptal Assistance. While Adeptal
+                    Assistance is active, nearby active characters in the party
+                    will have their jump height increased.
+                  </li>
+                  <li>
+                    When the active character completes a Plunging Attack,
+                    Starwicker will consume 1 stack of Adeptal Assistance and
+                    deal AoE Anemo DMG.
+                  </li>
+                </ul>
+                <p>Only 1 Starwicker can exist simultaneously.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Galefeather Pursuit</td>
+              <td>
+                <p>
+                  Each opponent hit by Driftcloud Waves from White Clouds at
+                  Dawn will grant all nearby party members 1 stack of Storm
+                  Pinion for 20s. Max 4 stacks. These will cause the characters'
+                  Plunging Attack CRIT Rate to increase by 4%/6%/8%/10%
+                  respectively. Each Storm Pinion created by hitting an opponent
+                  has an independent duration.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Consider, the Adeptus in Her Realm</td>
+              <td>
+                <p>
+                  When the Starwicker created by Stars Gather at Dusk has
+                  Adeptal Assistance stacks, nearby active characters' Plunging
+                  Attack shockwave DMG will be increased by 200% of Xianyun's
+                  ATK. The maximum DMG increase that can be achieved this way is
+                  9,000. Each Plunging Attack shockwave DMG instance can only
+                  apply this increased DMG effect to a single opponent. Each
+                  character can trigger this effect once every 0.4s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Crane Form</td>
+              <td>
+                <p>
+                  Increases gliding SPD for your own party members by 15%. Not
+                  stackable with Passive Talents that provide the exact same
+                  effects.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Purifying Wind</td>
+              <td>White Clouds at Dawn gains 1 additional charge.</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Aloof From the World</td>
+              <td>
+                After using a Skyladder from White Clouds at Dawn, Xianyun's ATK
+                will be increased by 20% for 15s. Additionally, the effects of
+                the Passive Talent "Consider, the Adeptus in Her Realm" will be
+                enhanced: When the Starwicker created by Stars Gather at Dusk
+                has Adeptal Assistance stacks, nearby active characters'
+                Plunging Attack shockwave DMG will be increased by 400% of
+                Xianyun's ATK. The maximum DMG increase that can be achieved
+                this way is 18,000. Each Plunging Attack shockwave DMG instance
+                can only apply this increased DMG effect to a single opponent.
+                Each character can trigger this effect once every 0.4s. You must
+                first unlock the Passive Talent "Consider, the Adeptus in Her
+                Realm."
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Creations of Star and Moon</td>
+              <td>
+                Increases the Level of Stars Gather at Dusk by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Mystery Millet Gourmet</td>
+              <td>
+                After using Skyladder 1/2/3 times during one White Clouds at
+                Dawn Cloud Transmogrification state, when a Driftcloud Wave
+                unleashed during that instance hits an opponent, it will heal
+                all nearby party members for 50%/80%/150% of Xianyun's ATK. This
+                effect can be triggered once every 5s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Astride Rose-Colored Clouds</td>
+              <td>
+                Increases the Level of White Clouds at Dawn by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>They Call Her Cloud Retainer</td>
+              <td>
+                After Xianyun uses 1/2/3 Skyladders within one Cloud
+                Transmogrification caused by White Clouds at Dawn, the CRIT DMG
+                of a Driftcloud Wave created in this instance of Cloud
+                Transmogrification will be increased by 15%/35%/70%. Within 16s
+                after Xianyun has used Stars Gather at Dusk, White Clouds at
+                Dawn will not enter CD. This effect will be canceled once she
+                has used White Clouds at Dawn 8 times.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/Hl_jEpTpVdM?si=RN6vfzOYEzH7QEzS"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

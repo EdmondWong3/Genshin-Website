@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Wriothesley</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span id="navigation-current-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"
+          ><span id="side-navigation-current-item">CRYO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">WRIOTHESLEY</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Wriothesley_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Administrator of the Fortress of Meropide, he was given Fontaine's
+          highest honorary title of "Duke." Both low-profile and dependable.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Forceful Fists of Frost</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Coalescing frost about his fist, Wriothesley will unleash
+                  powerful Repelling Fists, performing up to 5 rapid attacks
+                  that deal Cryo DMG. Apart from this, Normal Attack combo count
+                  will not reset for a short time after using Icefang Rush or
+                  sprinting.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a fixed amount of Stamina to leap and unleash a
+                  Vaulting Fist, dealing AoE Cryo DMG.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE Cryo DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Icefang Rush</td>
+              <td>
+                <p>
+                  Adjusting his breathing, rhythm, and pace, Wriothesley sprints
+                  forward a short distance, entering the Chilling Penalty state
+                  and unleashing more powerful attacks than before.
+                </p>
+                <p class="bold-and-bring-up">Chilling Penalty</p>
+                <ul>
+                  <li>Increases Wriothesley's interruption resistance</li>
+                  <li>
+                    When his HP is above 50%, it will enhance the Repelling
+                    Fists of Normal Attack: Forceful Fists of Frost and increase
+                    its DMG. When such an attack hits, it will consume a fixed
+                    amount of Wriothesley's HP. HP can be lost this way once
+                    every 0.1s.
+                  </li>
+                </ul>
+                <p>
+                  This effect will be canceled should Wriothesley leave the
+                  field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Darkgold Wolfbite</td>
+              <td>
+                <p>
+                  Activating his boxing gloves, Wriothesley strikes out with an
+                  icy straight, then uses Icicle Impact to cause multiple
+                  instances of AoE Cryo DMG in a frontal area.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Ousia</p>
+                <p>
+                  After Icicle Impact ends, a Surging Blade will descend upon
+                  the opponent's position, dealing Ousia-aligned Cryo DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>There Shall Be a Plea for Justice</td>
+              <td>
+                <p>
+                  When Wriothesley's HP is less than 60%, he will obtain a
+                  Gracious Rebuke. The next Charged Attack of his Normal Attack:
+                  Forceful Fists of Frost will be enhanced to become Rebuke:
+                  Vaulting Fist. It will not consume Stamina, will deal 50%
+                  increased DMG, and after hitting will restore HP for
+                  Wriothesley equal to 30% of his Max HP. You can gain a
+                  Gracious Rebuke this way once every 5s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>There Shall Be a Reckoning for Sin</td>
+              <td>
+                <p>
+                  When Wriothesley's current HP increases or decreases, if he is
+                  in the Chilling Penalty state conferred by Icefang Rush,
+                  Chilling Penalty will gain one stack of Prosecution Edict. Max
+                  5 stacks. Each stack will increase Wriothesley's ATK by 6%.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>The Duke's Grace</td>
+              <td>
+                <p>
+                  When Wriothesley crafts Weapon Ascension Materials, he has a
+                  10% chance to receive double the product.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Terror for the Evildoers</td>
+              <td>
+                The Gracious Rebuke from the Passive Talent "There Shall Be a
+                Plea for Justice" is changed to this: When Wriothesley's HP is
+                less than 60% or while he is in the Chilling Penalty state
+                caused by Icefang Rush, when the fifth attack of Repelling Fists
+                hits, it will create a Gracious Rebuke. 1 Gracious Rebuke effect
+                can be obtained every 2.5s. Additionally, Rebuke: Vaulting Fist
+                will obtain the following enhancement:
+                <ul>
+                  <li>
+                    The DMG Bonus gained will be further increased to 200%.
+                  </li>
+                  <li>
+                    When it hits while Wriothesley is in the Chilling Penalty
+                    state, that state's duration is extended by 4s. 1 such
+                    extension can occur per 1 Chilling Penalty duration.
+                  </li>
+                </ul>
+                You must first unlock the Passive Talent "There Shall Be a Plea
+                for Justice."
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Shackles for the Arrogant</td>
+              <td>
+                When using Darkgold Wolfbite, each Prosecution Edict stack from
+                the Passive Talent "There Shall Be a Reckoning for Sin" will
+                increase said ability's DMG dealt by 40%. You must first unlock
+                the Passive Talent "There Shall Be a Reckoning for Sin."
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Punishment for the Frauds</td>
+              <td>
+                Increases the Level of Normal Attack: Forceful Fists of Frost by
+                3. Maximum upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Redemption for the Suffering</td>
+              <td>
+                The HP restored to Wriothesley through Rebuke: Vaulting Fist
+                will be increased to 50% of his Max HP. You must first unlock
+                the Passive Talent "There Shall Be a Plea for Justice".
+                Additionally, when Wriothesley is healed, if the amount of
+                healing overflows, the following effects will occur depending on
+                whether he is on the field or not. If he is on the field, his
+                ATK SPD will be increased by 20% for 4s. If he is off-field, all
+                of your own party members' ATK SPD will be increased by 10% for
+                6s. These two methods of increasing ATK SPD cannot stack.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Mercy for the Wronged</td>
+              <td>
+                Increases the Level of Darkgold Wolfbite by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Esteem for the Innocent</td>
+              <td>
+                The CRIT Rate of Rebuke: Vaulting Fist will be increased by 10%,
+                and its CRIT DMG by 80%. When unleashed, it will also create an
+                additional icicle that deals 100% of Rebuke: Vaulting Fist's
+                Base DMG as Cryo DMG. DMG dealt this way is regarded as Charged
+                Attack DMG. You must first unlock the Passive Talent "There
+                Shall Be a Plea for Justice."
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/qtLC02LKtKo?si=R1b0eAnFhI8W1uWU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

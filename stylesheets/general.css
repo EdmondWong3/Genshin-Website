@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: "HvDTrial Brandon Grotesque", sans-serif;
+  color: white;
+  background-color: rgb(40, 43, 48);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+iframe {
+  border: none;
+}
+
+#loading-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#content-container {
+  display: none;
+}
+

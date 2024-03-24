@@ -1,0 +1,46 @@
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+#list-of-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  opacity: 0.5;
+}
+
+.contact-icon:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#github-icon {
+  width: 46px;
+  height: 46px;
+  margin-top: 2px;
+  margin-right: 1px;
+}
+
+#linkedin-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#mail-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#copyright-footer {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}

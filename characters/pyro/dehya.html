@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Dehya</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span id="navigation-current-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"
+          ><span id="side-navigation-current-item">PYRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">DEHYA</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Dehya_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A member of "The Eremites," a loosely-organized mercenary
+          organization. She is brave, powerful, and enjoys an excellent
+          reputation among mercenaries.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Sandstorm Assault</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>
+                  Performs up to 4 consecutive strikes using her Claymore and
+                  her martial arts.
+                </p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Drains Stamina over time to perform continuous slashes. At the
+                  end of the sequence, performs a more powerful slash.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground, damaging opponents
+                  along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Molten Inferno</td>
+              <td>
+                <p>
+                  This art of Dehya's own invention changes its method of use
+                  depending on the combat situation.
+                </p>
+                <p class="bold-and-bring-up">Indomitable Flame</p>
+                <p>
+                  This skill will be unleashed should there be no Fiery Sanctum
+                  field created by Dehya herself present at the time. Deals AoE
+                  Pyro DMG, and creates a field known as Fiery Sanctum.
+                </p>
+                <p class="bold-and-bring-up">Ranging Flame</p>
+                <p>
+                  This skill will be unleashed should a Fiery Sanctum field
+                  created by Dehya herself already exist. Dehya will perform a
+                  leaping attack, dealing AoE Pyro DMG before recreating a Fiery
+                  Sanctum field at her new position. A Fiery Sanctum field
+                  created this way will inherit the remaining duration of the
+                  previous field. Ranging Flame can be used only once throughout
+                  a single Fiery Sanctum field's duration.
+                </p>
+                <p class="bold-and-bring-up">Fiery Sanctum</p>
+                <p>
+                  When an opponent within a Fiery Sanctum field takes DMG, the
+                  field will unleash a coordinated attack, dealing AoE Pyro DMG
+                  to them based on Dehya's ATK and Max HP. This effect can be
+                  triggered once every 2.5s. Active characters within this field
+                  have their resistance to interruption increased, and when such
+                  characters take DMG, a portion of that damage will be
+                  mitigated and flow into Redmane's Blood. Dehya will then take
+                  this DMG over 10s. When the mitigated DMG stored by Redmane's
+                  Blood reaches or goes over a certain percentage of Dehya's Max
+                  HP, she will stop mitigating DMG in this way. Only 1 Fiery
+                  Sanctum created by Dehya herself can exist at the same time.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Leonine Bite</td>
+              <td>
+                <p>
+                  Unleashing her burning anger and casting her inconvenient
+                  blade aside, Dehya enters the Blazing Lioness state and
+                  increases her resistance to interruption. In this state, Dehya
+                  will automatically and continuously unleash the Flame-Mane's
+                  Fists, dealing Pyro DMG based on her ATK and Max HP, and when
+                  its duration ends, she will unleash an Incineration Drive,
+                  dealing AoE Pyro DMG based on her ATK and Max HP. If a Fiery
+                  Sanctum field created by Dehya's own Elemental Skill "Molten
+                  Inferno" exists when this ability is unleashed, Dehya will
+                  retrieve it, and then create another field once Blazing
+                  Lioness's duration expires. This field will take on the
+                  retrieved field's duration at the moment of its retrieval. In
+                  this state, Dehya will be unable to cast her Elemental Skill,
+                  or perform Normal, Charged, and Plunging Attacks. "Normal
+                  Attack: Sandstorm Assault" and Elemental Skill "Molten
+                  Inferno" will be replaced by "Roaring Barrage."
+                </p>
+                <p class="bold-and-bring-up">Roaring Barrage</p>
+                <p>
+                  Unleashing Roaring Barrage within 0.4s after each Flame-Mane's
+                  Fist strike will increase the speed at which the next
+                  Flame-Mane's Fist strike will be triggered.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Unstinting Succor</td>
+              <td>
+                <p>
+                  Within 6 seconds after Dehya retrieves the Fiery Sanctum field
+                  through Molten Inferno: Ranging Flame or Leonine Bite, she
+                  will take 60% less DMG when receiving DMG from Redmane's
+                  Blood. This effect can be triggered once every 2s.
+                  Additionally, within 9s after Dehya unleashes Molten Inferno:
+                  Indomitable Flame, she will grant all party members the
+                  Gold-Forged Form state. This state will further increase a
+                  character's resistance to interruption when they are within
+                  the Fiery Sanctum field. Gold-Forged Form can be activated
+                  once every 18s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Stalwart and True</td>
+              <td>
+                <p>
+                  When her HP is less than 40%, Dehya will recover 20% of her
+                  Max HP and will restore 6% of her Max HP every 2s for the next
+                  10s. This effect can be triggered once every 20s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>The Sunlit Way</td>
+              <td>
+                <p>
+                  During the day (6:00 – 18:00), your party members gain the
+                  Swift Stride effect: Movement SPD increased by 10%. Does not
+                  take effect in Domains, Trounce Domains, or Spiral Abyss.
+                  Swift Stride does not stack.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>The Flame Incandescent</td>
+              <td>
+                Dehya's Max HP is increased by 20%, and she deals bonus DMG
+                based on her Max HP when using the following attacks:
+                <ul>
+                  <li>
+                    Molten Inferno's DMG will be increased by 3.6% of her Max
+                    HP.
+                  </li>
+                  <li>
+                    Leonine Bite's DMG will be increased by 6% of her Max HP.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>The Sand-Blades Glittering</td>
+              <td>
+                When Dehya uses Molten Inferno: Ranging Flame, the duration of
+                the recreated Fiery Sanctum field will be increased by 6s.
+                Additionally, when a Fiery Sanctum exists on the field, DMG
+                dealt by its next coordinated attack will be increased by 50%
+                when active character(s) within the Fiery Sanctum field are
+                attacked.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>A Rage Swift as Fire</td>
+              <td>
+                Increases the Level of Leonine Bite by 3. Maximum upgrade level
+                is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>An Oath Abiding</td>
+              <td>
+                When Flame-Mane's Fist and Incineration Drive attacks unleashed
+                during Leonine Bite hit opponents, they will restore 1.5 Energy
+                for Dehya and 2.5% of her Max HP. This effect can be triggered
+                once every 0.2s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>The Alpha Unleashed</td>
+              <td>
+                Increases the Level of Molten Inferno by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>The Burning Claws Cleaving</td>
+              <td>
+                The CRIT Rate of Leonine Bite is increased by 10%. Additionally,
+                after a Flame-Mane's Fist attack hits an opponent and deals CRIT
+                Hits during a single Blazing Lioness state, it will cause the
+                CRIT DMG of Leonine Bite to increase by 15% for the rest of
+                Blazing Lioness's duration and extend that duration by 0.5s.
+                This effect can be triggered every 0.2s. The duration can be
+                extended for a maximum of 2s and CRIT DMG can be increased by a
+                maximum of 60% this way.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/je3XXTBWJY4?si=OLRoawJMhgD91JSK"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

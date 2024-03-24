@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Yoimiya</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span id="navigation-current-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"
+          ><span id="side-navigation-current-item">PYRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">YOIMIYA</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Yoimiya_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A talented pyrotechnician. The current owner of Naganohara Fireworks
+          known as the "Queen of the Summer Festival". A girl filled with fiery
+          passion. The uncompromising childish innocence and the obsession with
+          craftsmanship intertwine in her to create a spectacular blaze.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Firework Flare-Up</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 5 consecutive shots with a bow.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Perform a more precise Aimed Shot with increased DMG. While
+                  aiming, flames will accumulate on the arrowhead before being
+                  fired off as an attack. Has different effects based on how
+                  long the energy has been charged:
+                </p>
+                <ul>
+                  <li>
+                    Charge Level 1: Fires off a flaming arrow that deals Pyro
+                    DMG.
+                  </li>
+                  <li>
+                    Charge Level 2: Generates a maximum of 3 Kindling Arrows
+                    based on time spent charging, releasing them as part of this
+                    Aimed Shot. Kindling Arrows will home in on nearby
+                    opponents, dealing Pyro DMG on hit.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Fires off a shower of arrows in mid-air before falling and
+                  striking the ground, dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Niwabi Fire-Dance</td>
+              <td>
+                <p>
+                  Yoimiya waves a sparkler and causes a ring of saltpeter to
+                  surround her.
+                </p>
+                <p class="bold-and-bring-up">Niwabi Enshou</p>
+                <p>
+                  During this time, arrows fired by Yoimiya's Normal Attack will
+                  be Blazing Arrows, and their DMG will be increased and
+                  converted to Pyro DMG. During this time, Normal Attack:
+                  Firework Flare-Up will not generate Kindling Arrows at Charge
+                  Level 2. This effect will deactivate when Yoimiya leaves the
+                  field.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Ryuukin Saxifrage</td>
+              <td>
+                <p>
+                  Yoimiya leaps into the air along with her original creation,
+                  the "Ryuukin Saxifrage," and fires forth blazing rockets
+                  bursting with surprises that deal AoE Pyro DMG and mark one of
+                  the hit opponents with Aurous Blaze.
+                </p>
+                <p class="bold-and-bring-up">Aurous Blaze</p>
+                <p>
+                  All Normal/Charged/Plunging Attacks, Elemental Skills, and
+                  Elemental Bursts by any party member other than Yoimiya that
+                  hit an opponent marked by Aurous Blaze will trigger an
+                  explosion, dealing AoE Pyro DMG. When an opponent affected by
+                  Aurous Blaze is defeated before its duration expires, the
+                  effect will pass on to another nearby opponent, who will
+                  inherit the remaining duration. One Aurous Blaze explosion can
+                  be triggered every 2s. When Yoimiya is down, Aurous Blaze
+                  effects created through her skills will be deactivated.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Tricks of the Trouble-Maker</td>
+              <td>
+                <p>
+                  During Niwabi Fire-Dance, shots from Yoimiya's Normal Attack
+                  will increase her Pyro DMG Bonus by 2% on hit. This effect
+                  lasts for 3s and can have a maximum of 10 stacks.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Summer Night's Dawn</td>
+              <td>
+                <p>
+                  Using Ryuukin Saxifrage causes nearby party members (not
+                  including Yoimiya) to gain a 10% ATK increase for 15s.
+                  Additionally, a further ATK Bonus will be added on based on
+                  the number of "Tricks of the Trouble-Maker" stacks Yoimiya
+                  possesses when using Ryuukin Saxifrage. Each stack increases
+                  this ATK Bonus by 1%.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Blazing Match</td>
+              <td>
+                <p>
+                  When Yoimiya crafts Decoration, Ornament, and Landscape-type
+                  Furnishings, she has a 100% chance to refund a portion of the
+                  materials used.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Agate Ryuukin</td>
+              <td>
+                The Aurous Blaze created by Ryuukin Saxifrage lasts for an extra
+                4s. Additionally, when an opponent affected by Aurous Blaze is
+                defeated within its duration, Yoimiya's ATK is increased by 20%
+                for 20s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>A Procession of Bonfires</td>
+              <td>
+                When Yoimiya's Pyro DMG scores a CRIT Hit, Yoimiya will gain a
+                25% Pyro DMG Bonus for 6s. This effect can be triggered even
+                when Yoimiya is not the active character.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Trickster's Flare</td>
+              <td>
+                Increase the Level of Niwabi Fire-Dance by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Pyrotechnic Professional</td>
+              <td>
+                When Yoimiya's own Aurous Blaze triggers an explosion, Niwabi
+                Fire-Dance's CD is decreased by 1.2.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>A Summer Festival's Eve</td>
+              <td>
+                Increases the Level of Ryuukin Saxifrage by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Naganohara Meteor Swarm</td>
+              <td>
+                During Niwabi Fire-Dance, Yoimiya's Normal Attacks have a 50%
+                chance of firing an extra Blazing Arrow that deals 60% of its
+                original DMG. This DMG is considered Normal Attack DMG.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/wzK0ZAC8cCk?si=We0gQ6sk7U845ciA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

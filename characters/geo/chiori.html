@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Chiori</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span id="navigation-current-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"
+          ><span id="side-navigation-current-item">GEO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">CHIORI</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Chiori_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A frank and outspoken fashion designer whose unique sense of style
+          always puts her at the forefront of Fontainian trends.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Weaving Blade</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 rapid strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Consumes a certain amount of Stamina to unleash 2 rapid sword
+                  strikes.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Fluttering Hasode</td>
+              <td>
+                <p>
+                  Dashes nimbly forward with silken steps. Once this dash ends,
+                  Chiori will summon the automaton doll "Tamoto" beside her and
+                  sweep her blade upward, dealing AoE Geo DMG to nearby
+                  opponents based on her ATK and DEF. Holding the Skill will
+                  cause it to behave differently.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>hEnter Aiming Mode to adjust the dash direction.</p>
+                <p class="bold-and-bring-up">Tamoto</p>
+                <ul>
+                  <li>
+                    Will slash at nearby opponents at intervals, dealing AoE Geo
+                    DMG based on Chiori's ATK and DEF.
+                  </li>
+                  <li>
+                    While active, if there are nearby Geo Construct(s) or Geo
+                    Construct(s) are created nearby, an additional Tamoto will
+                    be summoned next to your active character. Only 1 additional
+                    Tamoto can be summoned in this manner, and its duration is
+                    independently counted.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Hiyoku: Twin Blades</td>
+              <td>
+                <p>
+                  Twin blades leave their sheaths as Chiori slices with the
+                  clean cuts of a master tailor, dealing AoE Geo DMG based on
+                  her ATK and DEF.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Tailor-Made</td>
+              <td>
+                <p>
+                  Gain different effects depending on the next action you take
+                  within a short duration after using Fluttering Hasode's upward
+                  sweep. If you (Press/Tap) the Elemental Skill, you will
+                  trigger the Tapestry effect. If you (Press/Tap) your Normal
+                  Attack, the Tailoring effect will be triggered instead.
+                </p>
+                <p class="bold-and-bring-up">Tapestry</p>
+                <ul>
+                  <li>Switches to the next character in your roster.</li>
+                  <li>
+                    Grants all your party members "Seize the Moment": When your
+                    active party member's Normal Attacks, Charged Attacks, and
+                    Plunging Attacks hit a nearby opponent, "Tamoto" will
+                    execute a coordinated attack, dealing 100% of Fluttering
+                    Hasode's upward sweep DMG as AoE Geo DMG at the opponent's
+                    location. DMG dealt this way is considered Elemental Skill
+                    DMG.
+                  </li>
+                  <li>
+                    "Seize the Moment" lasts 8s, and 1 of "Tamoto"'s coordinated
+                    attack can be unleashed every 2s. 2 such coordinated attacks
+                    can occur per "Seize the Moment" effect duration.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Tailoring</p>
+                <ul>
+                  <li>Chiori gains Geo infusion for 5s.</li>
+                </ul>
+                <p>
+                  When on the field, if Chiori does not either (Press/Tap) her
+                  Elemental Skill or use a Normal Attack within a short time
+                  after using Fluttering Hasode's upward sweep, the Tailoring
+                  effect will be triggered by default.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>The Finishing Touch</td>
+              <td>
+                <p>
+                  When a nearby party member creates a Geo Construct, Chiori
+                  will gain 20% Geo DMG Bonus for 20s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Brocaded Collar's Beauteous Silhouette</td>
+              <td>
+                <p>
+                  When any party member is wearing an outfit apart from their
+                  default outfit, or is wearing a wind glider other than the
+                  Wings of First Flight, your party members will obtain the
+                  Swift Stride effect: Movement SPD is increased by 10%. This
+                  effect does not take effect in Domains, Trounce Domains and
+                  the Spiral Abyss. Swift Stride does not stack.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Six Paths of Sage Silkcraft</td>
+              <td>
+                The AoE of the automaton doll "Tamoto" summoned by Fluttering
+                Hasode is increased by 50%. Additionally, if there is a Geo
+                party member other than Chiori, Fluttering Hasode will trigger
+                the following after the dash is completed:
+                <ul>
+                  <li>
+                    Summon an additional Tamoto. Only one additional Tamoto can
+                    exist at the same time, whether summoned by Chiori this way
+                    or through the presence of a Geo Construct.
+                  </li>
+                  <li>
+                    Triggers the Passive Talent "The Finishing Touch." This
+                    effect requires you to first unlock the Passive Talent "The
+                    Finishing Touch."
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>In Five Colors Dyed</td>
+              <td>
+                For 10s after using Hiyoku: Twin Blades, a simplified automaton
+                doll, "Kinu," will be summoned next to your active character
+                every 3s. Kinu will attack nearby opponents, dealing AoE Geo DMG
+                equivalent to 170% of Tamoto's DMG. DMG dealt this way is
+                considered Elemental Skill DMG. Kinu will leave the field after
+                1 attack or after lasting 3s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Four Brocade Embellishments</td>
+              <td>
+                Increases the Level of Fluttering Hasode by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>A Tailor's Three Courtesies</td>
+              <td>
+                For 8s after triggering either follow-up effect of the Passive
+                Talent "Tailor-Made," when your current active character's
+                Normal, Charged, or Plunging Attacks hit a nearby opponent, a
+                simplified automaton doll, "Kinu," will be summoned near this
+                opponent. You can summon 1 Kinu every 1s in this way, and up to
+                3 Kinu may be summoned this way during each instance of
+                "Tailor-Made"'s Seize the Moment or Tailoring effect. The above
+                effect can be triggered up to once every 15s. Must unlock the
+                Passive Talent "Tailor-Made" first.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Two Silken Plumules</td>
+              <td>
+                Increases the Level of Hiyoku: Twin Blades by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Sole Principle Pursuit</td>
+              <td>
+                After triggering a follow-up effect of the Passive Talent
+                "Tailor-Made," Chiori's own Fluttering Hasode's CD is decreased
+                by 12s. Must unlock the Passive "Tailor-Made" first. In
+                addition, the DMG dealt by Chiori's own Normal Attacks is
+                increased by an amount equal to 235% of her own DEF.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/QeCsTWMFrmg?si=CllDlQTWNwy_APYQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

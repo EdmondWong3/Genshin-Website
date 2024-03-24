@@ -1,0 +1,152 @@
+#character-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#character-name {
+  font-size: 50px;
+  letter-spacing: 8px;
+}
+
+#portrait-and-lore-container, 
+.section-container {
+  display: flex;
+  width: 75%;
+  background-color: rgb(54,57,62);
+  margin-bottom: 70px;
+}
+
+#portrait-and-lore-container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#character-portrait {
+  width: 40%;
+  padding: 25px 50px;
+}
+
+#character-lore {
+  width: 50%;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 60px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: none;
+}
+
+.section-header {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.content-table {
+  width:80%;
+  color: white;
+  background-color: rgb(54,57,62);
+  text-align: left;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: 25px 25px 50px 25px;
+}
+
+.content-table th:nth-child(1),
+.content-table th:nth-child(2),
+.content-table td:nth-child(1),
+.content-table td:nth-child(2) {
+  text-align: center;
+}
+
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table th,
+.content-table td {
+  padding: 18px;
+}
+
+.content-table tbody th {
+  font-size: 25px;
+}
+
+.content-table tbody td {
+  font-size: 20px;
+}
+
+.bold-and-bring-up {
+  font-weight: 900;
+  margin-bottom: -20px;
+}
+
+iframe { 
+  width: 75%;
+  aspect-ratio: 17.8 / 10;
+  padding-bottom: 4%;
+}
+
+/*
+* Adjust values for mobile devices and smaller screen sizes.
+*/
+@media only screen and (max-width: 1500px) {
+  #portrait-and-lore-container,
+  .section-container {
+    width: 85%;
+  }
+
+  #portrait-and-lore-container {
+    flex-direction: column;
+  }
+
+  #character-portrait {
+    width: 80%;
+  }
+
+  #character-lore {
+    font-size: 18px;
+    width: 85%;
+  }
+
+  .section-header {
+    font-size: 30px;
+  }
+
+  .content-table {
+    width: 90%;
+  }
+
+  .content-table th,
+  .content-table td {
+  padding: 8px;
+  }
+
+  .content-table tbody th {
+    font-size: 20px;
+  }
+
+  .content-table tbody td {
+    font-size: 16px;;
+  }
+
+  #showcase-video {
+    width: 92%;
+  }
+}
+
+
+
+
+

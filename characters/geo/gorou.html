@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Gorou</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span id="navigation-current-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"
+          ><span id="side-navigation-current-item">GEO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">GOROU</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Gorou_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          The great general of Watatsumi Island's forces. He has gained respect
+          and prestige, but always shows himself to be a humble leader. He is
+          deeply trusted by his subordinates and is someone with whom you can
+          share your feelings without shame.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Ripping Fang Fletching</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive shots with a bow.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Perform a more precise Aimed Shot with increased DMG. While
+                  aiming, stone crystals will accumulate on the arrowhead. A
+                  fully charged crystalline arrow will deal Geo DMG.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Fires off a shower of arrows in mid-air before falling and
+                  striking the ground, dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Inuzaka All-Round Defense</td>
+              <td>
+                <p>Deals AoE Geo DMG and sets up a General's War Banner.</p>
+                <p class="bold-and-bring-up">General's War Banner</p>
+                <p>
+                  Provides up to 3 buffs to active characters within the skill's
+                  AoE based on the number of Geo characters in the party at the
+                  time of casting:
+                </p>
+                <ul>
+                  <li>1 Geo character: Adds "Standing Firm" - DEF Bonus.</li>
+                  <li>
+                    2 Geo characters: Adds "Impregnable" - Increased resistance
+                    to interruption.
+                  </li>
+                  <li>3 Geo characters: Adds "Crunch" - Geo DMG Bonus.</li>
+                </ul>
+                <p>
+                  Gorou can deploy only 1 General's War Banner on the field at
+                  any one time.Characters can only benefit from 1 General's War
+                  Banner at a time. When a party member leaves the field, the
+                  active buff will last for 2s.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>Adjust the location of the skill.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Juuga: Forward Unto Victory</td>
+              <td>
+                <p>
+                  Displaying his valor as a general, Gorou deals Aoe Geo DMG and
+                  creates a field known as General's Glory to embolden his
+                  comrades.
+                </p>
+                <p class="bold-and-bring-up">General's Glory</p>
+                <p>This field has the following properties:</p>
+                <ul>
+                  <li>
+                    Like the General's War Banner created by Inuzaka All-Round
+                    Defense, provides buffs to active characters within the
+                    skill's AoE based on the number of Geo characters in the
+                    party. Also moves together with your active character.
+                  </li>
+                  <li>
+                    Generates 1 Crystal Collapse every 1.5s that deals AoE Geo
+                    DMG to 1 opponent within the skill's AoE.
+                  </li>
+                  <li>
+                    Pulls 1 elemental shard in the skill's AoE to your active
+                    character's position every 1.5s (elemental shards are
+                    created by Crystallize reactions).
+                  </li>
+                </ul>
+                <p>
+                  If a General's War Banner created by Gorou currently exists on
+                  the field when his ability is used, it will be destroyed. In
+                  addition, for the duration of General's Glory, Gorou's
+                  Elemental Skill "Inuzaka All-Round Defense" will not create
+                  the General's War Banner. If Gorou falls, the effects of
+                  General's Glory will be cleared.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Heedless of the Wind and Weather</td>
+              <td>
+                <p>
+                  After using Juuga: Forward Unto Victory, all nearby party
+                  members' DEF is increased by 25% for 12s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>A Favor Repaid</td>
+              <td>
+                <p>
+                  Gorou receives the following DMG Bonuses to his attacks based
+                  on his DEF:
+                </p>
+                <ul>
+                  <li>
+                    Inuzaka All-Round Defense: Skill DMG increased by 156% of
+                    DEF
+                  </li>
+                  <li>
+                    Juuga: Forward Unto Victory: Skill DMG and Crystal Collapse
+                    DMG increased by 15.6% of DEF
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Seeker of Shinies</td>
+              <td>
+                <p>
+                  Displays the location of nearby resources unique to Inazuma on
+                  the mini-map.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Rushing Hound: Swift as the Wind</td>
+              <td>
+                When characters (other than Gorou) within the AoE of Gorou's
+                General's War Banner or General's Glory deal Geo DMG to
+                opponents, the CD of Gorou's Inuzaka All-Round Defense is
+                decreased by 2s. This effect can occur once every 10s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Sitting Hound: Steady as a Clock</td>
+              <td>
+                While General's Glory is in effect, its duration is extended by
+                1s when a nearby active character obtains an Elemental Shard
+                from a Crystallize reaction. This effect can occur once every
+                0.1s. Max extension is 3s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Mauling Hound: Fierce as Fire</td>
+              <td>
+                Increases the Level of Inuzaka All-Round Defense by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Lapping Hound: Warm as Water</td>
+              <td>
+                When General's Glory is in the "Impregnable" or "Crunch" states,
+                it will also heal active characters within its AoE by 50% of
+                Gorou's own DEF every 1.5s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Striking Hound: Thunderous Force</td>
+              <td>
+                Increases the Level of Juuga: Forward Unto Victory by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Valiant Hound: Mountainous Fealty</td>
+              <td>
+                For 12s after using Inuzaka All-Round Defense or Juuga: Forward
+                Unto Victory, increases the CRIT DMG of all nearby party
+                members' Geo DMG based on the buff level of the skill's field at
+                the time of use:
+                <ul>
+                  <li>"Standing Firm": +10%</li>
+                  <li>"Impregnable": +20%</li>
+                  <li>"Crunch": +40%</li>
+                </ul>
+                This effect cannot stack and will take reference from the last
+                instance of the effect that is triggered.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/vPn30LZBk4o?si=TkEioN4t9R2J15qi"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

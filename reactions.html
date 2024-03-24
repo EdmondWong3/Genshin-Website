@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Reactions</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/reactions.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="loading-screen-container">
+      <img
+        src="/images/misc/loading-screen-gif.gif"
+        alt=""
+        id="loading-screen-gif"
+      />
+    </div>
+
+    <div id="content-container">
+      <div id="overlay"></div>
+
+      <div id="navigation-bar">
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/Hamburger_Menu_Icon.png"
+            alt=""
+            id="hamburger-menu-icon"
+          />
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/paimon-icon.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/homepage.html"
+            ><span class="navigation-item">GENSHIN</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_anemo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_cryo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_dendro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_electro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/electro.html"
+            ><span class="navigation-item">ELECTRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_geo.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_hydro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_pyro.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/elemental_reaction_icon.png"
+            alt=""
+            class="navigation-item-image"
+          />
+          <a href="/reactions.html"
+            ><span id="navigation-current-item">REACTIONS</span></a
+          >
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div id="side-navigation-bar">
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/misc/paimon-icon.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/homepage.html"
+            ><span class="side-navigation-item">GENSHIN</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_anemo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/ameno.html"
+            ><span class="side-navigation-item">AMENO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_cryo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/cryo.html"
+            ><span class="side-navigation-item">CRYO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_dendro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/dendro.html"
+            ><span class="side-navigation-item">DENDRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_electro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/electro.html"
+            ><span class="side-navigation-item">ELECTRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_geo.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_hydro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/hydro.html"
+            ><span class="side-navigation-item">HYDRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/element_pyro.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/pyro.html"
+            ><span class="side-navigation-item">PYRO</span></a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="navigation-item-container">
+          <img
+            src="/images/element-icons/elemental_reaction_icon.png"
+            alt=""
+            class="side-navigation-item-image"
+          />
+          <a href="/reactions.html"
+            ><span id="side-navigation-current-item">REACTIONS</span></a
+          >
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <!--Tables which shows all elemental reactions and their combinations. Uses ordered list to show certain combinations.-->
+      <div id="reaction-tables-container">
+        <div id="main-header-container">
+          <img
+            src="/images/element-icons/elemental_reaction_icon_2.png"
+            alt=""
+            id="elemental-reaction-icon"
+          />
+          <h1 id="main-header">ELEMENTAL REACTIONS</h1>
+        </div>
+
+        <table class="reaction-table" id="ameno-table">
+          <tr>
+            <th colspan="2" id="ameno-header">AMENO</th>
+          </tr>
+          <tr>
+            <td>Cyro</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Swirl</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>
+                  Hydro Swirls don't have AOE damage, but they apply the Wet
+                  status to targets in the Swirl
+                </li>
+                <li>
+                  Cryo, Electro, and Pyro Swirls do AOE damage of the Swirled
+                  Element
+                </li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="cryo-table">
+          <tr>
+            <th colspan="2" id="cryo-header">CRYO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Superconduct</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Frozen</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Melt</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>Frozen + Geo or Blunt attack = Shatter</li>
+                <li>Frozen + Pyro = Melt</li>
+                <li>Frozen + Electro = Superconduct</li>
+                <li>Frozen + Ameno = Swirl</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="dendro-table">
+          <tr>
+            <th colspan="2" id="dendro-header">DENDRO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cryo</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Quicken</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Bloom</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Burning</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>Bloom + Electro = Hyperbloom</li>
+                <li>Bloom + Pyro = Burgeon</li>
+                <li>Quicken + Dendro = Spread</li>
+                <li>Quicken + Electro = Aggravate</li>
+                <li>Quicken + Hydro = Bloom</li>
+                <li>Quicken + Pyro = Burning</li>
+                <li>Burning and Bloom consume the Quicken Aura</li>
+                <li>
+                  Bloom Cores explode when Hyperbloom or Blurgeon is activated,
+                  or after being on field for six seconds
+                </li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="electro-table">
+          <tr>
+            <th colspan="2" id="electro-header">ELECTRO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Cryo</td>
+            <td>Superconduct</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>Quicken</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Electro-Charged</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Overloaded</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>Quicken + Dendro = Spread</li>
+                <li>Quicken + Electro = Aggravate</li>
+                <li>Quicken + Hydro = Bloom</li>
+                <li>Quicken + Pyro = Burning</li>
+                <li>Burning and Bloom consume the Quicken Aura</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="geo-table">
+          <tr>
+            <th colspan="2" id="geo-header">GEO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cryo</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>Frozen + Geo or Blunt attack = Shatter</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="hydro-table">
+          <tr>
+            <th colspan="2" id="hydro-header">HYDRO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Cryo</td>
+            <td>Frozen</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>Bloom</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Electro-Charged</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Pyro</td>
+            <td>Vaporize</td>
+          </tr>
+          <tr class="notes-section">
+            <td colspan="2">
+              <p><u>Notes:</u></p>
+              <ol>
+                <li>Bloom + Electro = Hyperbloom</li>
+                <li>Bloom + Pyro = Burgeon</li>
+                <li>Frozen + Ameno = Swirl</li>
+                <li>Frozen + Electro = Superconduct</li>
+                <li>Frozen + Geo or Blunt attack = Shatter</li>
+                <li>Frozen + Pyro = Melt</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+        <table class="reaction-table" id="pyro-table">
+          <tr>
+            <th colspan="2" id="pyro-header">PYRO</th>
+          </tr>
+          <tr>
+            <td>Ameno</td>
+            <td>Swirl</td>
+          </tr>
+          <tr>
+            <td>Cryo</td>
+            <td>Melt</td>
+          </tr>
+          <tr>
+            <td>Dendro</td>
+            <td>Burning</td>
+          </tr>
+          <tr>
+            <td>Electro</td>
+            <td>Overloaded</td>
+          </tr>
+          <tr>
+            <td>Geo</td>
+            <td>Crystallize</td>
+          </tr>
+          <tr>
+            <td>Hydro</td>
+            <td>Vaporize</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="footer-container">
+        <div id="list-of-contacts">
+          <a target="_blank" href="https://github.com/EdmondWong3"
+            ><img
+              src="/images/contact-icons/github-icon.png"
+              alt=""
+              id="github-icon"
+              class="contact-icon"
+          /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+            ><img
+              src="/images/contact-icons/linkedin-icon.png"
+              alt=""
+              id="linkedin-icon"
+              class="contact-icon"
+          /></a>
+          <a href="mailto:edmondjwong12@gmail.com"
+            ><img
+              src="/images/contact-icons/mail-icon.png"
+              alt=""
+              id="mail-icon"
+              class="contact-icon"
+          /></a>
+        </div>
+        <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+      </div>
+    </div>
+
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

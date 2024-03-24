@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Freminet</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"><span class="navigation-item">AMENO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span id="navigation-current-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span class="side-navigation-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"
+          ><span id="side-navigation-current-item">CRYO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">FREMINET</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Freminet_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          A taciturn young man and an expert diver, his heart remains as
+          innocent as the fairytales that never cease to absorb him.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Flowing Eddies</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Drains Stamina over time to perform continuous spinning
+                  attacks against all nearby opponents. At the end of the
+                  sequence, performs a more powerful slash.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Pressurized Floe</td>
+              <td>
+                <p>
+                  Performs an upward thrust that deals Cryo DMG and causes
+                  Freminet to enter Pers Timer for 10s. While Pers Timer is
+                  active, his Elemental Skill will turn into Shattering
+                  Pressure.
+                </p>
+                <p class="bold-and-bring-up">Shattering Pressure</p>
+                <p>
+                  Executes different sorts of attacks based on the Pressure
+                  Level of Pers Timer, and then cancels Pers Timer.
+                </p>
+                <ul>
+                  <li>Level 0: Unleashes a vertical cut, dealing Cryo DMG.</li>
+                  <li>
+                    Levels 1 to 3: Unleashes a vertical cut alongside Pers,
+                    dealing Cryo DMG and Physical DMG. DMG dealt scales based on
+                    Pressure Level.
+                  </li>
+                  <li>
+                    Level 4: Borrows the power of a fully-pressurized Pers to
+                    deal Physical DMG. Meanwhile, Normal Attack: Flowing Eddies
+                    will be replaced by Shattering Pressure.
+                  </li>
+                </ul>
+                <p class="bold-and-bring-up">Pers Timer</p>
+                <p>
+                  When Freminet uses Normal Attacks, he will also unleash waves
+                  of frost that deal Cryo DMG and increase Pers's Pressure
+                  Level. The accompanying Cryo DMG dealt this way is considered
+                  Elemental Skill DMG.
+                </p>
+                <p class="bold-and-bring-up">Arkhe: Pneuma</p>
+                <p>
+                  At certain intervals, after using the upward thrust, a
+                  Spiritbreath Thorn in the form of another upward thrust will
+                  be created, dealing Pneuma-aligned Cryo DMG.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Shadowhunter's Ambush</td>
+              <td>
+                <p>
+                  Unleashes a wave of untouchable cold, dealing AoE Cryo DMG,
+                  resetting the CD of the Elemental Skill "Pressurized Floe,"
+                  and causing Freminet to enter the Subnautical Hunter mode for
+                  10s. While in Subnautical Hunter mode, Freminet's resistance
+                  to interruption will increase, and his Elemental Skill
+                  "Pressurized Floe" will obtain the following buffs:
+                </p>
+                <ul>
+                  <li>CD is decreased by 70%.</li>
+                  <li>
+                    Normal Attacks will increase the Pers Timer by 1 additional
+                    Pressure Level, and the frost released by his Normal Attacks
+                    deal 200% of their original DMG.
+                  </li>
+                </ul>
+                <p>
+                  These effects will be canceled when Freminet leaves the field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Saturation Deep Dive</td>
+              <td>
+                <p>
+                  When Freminet unleashes Pressurized Floe: Shattering Pressure,
+                  if Pers Timer has yet to reach Pressure Level 4, the CD of
+                  Pressurized Floe will be decreased by 1s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>Parallel Condensers</td>
+              <td>
+                <p>
+                  When Freminet triggers Shatter against opponents, the DMG
+                  dealt by Pressurized Floe: Shattering Pressure will be
+                  increased by 40% for 5s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Deepwater Navigation</td>
+              <td>
+                <p>
+                  Decreases Aquatic Stamina consumption for your own party
+                  members by 35%. Not stackable with Passive Talents that
+                  provide the exact same effects.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Dreams of the Foamy Deep</td>
+              <td>
+                The CRIT Rate of Pressurized Floe: Shattering Pressure will be
+                increased by 15%.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Penguins and the Land of Plenty</td>
+              <td>
+                Unleashing Pressurized Floe: Shattering Pressure will restore 2
+                Energy to Freminet. If a Pressure Level 4 Shattering Pressure is
+                unleashed, this will restore 3 Energy.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Song of the Eddies and Bleached Sands</td>
+              <td>
+                Increases the Level of Normal Attack: Flowing Eddies by 3.
+                Maximum upgrade level is 15
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Dance of the Snowy Moon and Flute</td>
+              <td>
+                After Freminet triggers Frozen, Shatter, or Superconduct against
+                opponents, his ATK will be increased by 9% for 6s. Max 2 stacks.
+                This can be triggered once every 0.3s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Nights of Hearth and Happiness</td>
+              <td>
+                Increases the Level of Pressurized Floe by 3. Maximum upgrade
+                level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Moment of Waking and Resolve</td>
+              <td>
+                After Freminet triggers Frozen, Shatter, or Superconduct against
+                opponents, his CRIT DMG will be increased by 12% for 6s. Max 3
+                stacks. This can be triggered once every 0.3s.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/lBZlBPy-aa4?si=ryiVRlNt7E_j-voZ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

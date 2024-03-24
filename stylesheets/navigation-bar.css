@@ -1,0 +1,153 @@
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+#navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(30, 33, 36);
+  z-index: 2;
+}
+
+#side-navigation-bar {
+  display: flex;
+  flex-direction: column;
+  width: 0px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgb(20, 23, 26);
+  overflow-x: hidden;
+  transition: 0.5s ease;
+  z-index: 3;
+}
+
+.navigation-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#genshin-game-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 8px;
+}
+
+.navigation-item-image,
+.side-navigation-item-image,
+#hamburger-menu-icon {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+#hamburger-menu-icon {
+  position: fixed;
+  left: 0;
+  margin-left: 4%;
+  cursor: pointer;
+  display: none;
+}
+
+#x-close-icon {
+  width: 70px;
+  height: 61px;
+}
+
+.navigation-item,
+.side-navigation-item,
+#navigation-current-item,
+#side-navigation-current-item {
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navigation-current-item,
+#side-navigation-current-item {
+  color: rgb(245, 245, 245);
+}
+
+.navigation-item:not(:hover),
+.side-navigation-item:not(:hover) {
+  color: rgb(160, 160, 160);
+  transition: 0.5s;
+}
+
+.navigation-item:hover,
+.side-navigation-item:hover {
+  color: rgb(230, 230, 230);
+  transition: 0.3s;
+}
+
+.divider {
+  width: 4%;
+  height: auto;
+  display: inline-block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*
+* Adjust values for mobile devices and smaller screen sizes.
+*/
+@media only screen and (max-width: 1500px) {
+  #hamburger-menu-icon {
+    display: flex;
+  }
+
+  .navigation-item-container {
+    margin-left: 25%;
+  }
+
+  #navigation-current-item,
+  .navigation-item,
+  .navigation-item-image {
+    display: none;
+  }
+
+  .divider {
+    height: 5%;
+  }
+}
+
+@media only screen and (min-width: 1501px) {
+  #overlay {
+    z-index: -2;
+  }
+  
+  #side-navigation-bar {
+    display: none;
+  }
+
+  #hamburger-menu-icon {
+    display: none;
+  }
+
+  .navigation-item-container {
+    margin-left: 0;
+  }
+}
+
+

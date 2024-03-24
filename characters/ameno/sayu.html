@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en" translate="no">
+  <head>
+    <title>Sayu</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/misc/website-icon.png" />
+    <link rel="stylesheet" href="/stylesheets/general.css" />
+    <link rel="stylesheet" href="/stylesheets/navigation-bar.css" />
+    <link rel="stylesheet" href="/stylesheets/character-page.css" />
+    <link rel="stylesheet" href="/stylesheets/footer.css" />
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+
+    <div id="navigation-bar">
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/Hamburger_Menu_Icon.png"
+          alt=""
+          id="hamburger-menu-icon"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/dendro.html"><span class="navigation-item">DENDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/electro.html"><span class="navigation-item">ELECTRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/geo.html"><span class="navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/hydro.html"><span class="navigation-item">HYDRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="side-navigation-bar">
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/misc/paimon-icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/homepage.html"
+          ><span class="side-navigation-item">GENSHIN</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_anemo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/ameno.html"
+          ><span id="side-navigation-current-item">AMENO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_cryo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/cryo.html"><span class="side-navigation-item">CRYO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_dendro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/dendro.html"
+          ><span class="side-navigation-item">DENDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_electro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/electro.html"
+          ><span class="side-navigation-item">ELECTRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_geo.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/geo.html"><span class="side-navigation-item">GEO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_hydro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/hydro.html"
+          ><span class="side-navigation-item">HYDRO</span></a
+        >
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/element_pyro.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/pyro.html"><span class="side-navigation-item">PYRO</span></a>
+      </div>
+      <div class="divider"></div>
+      <div class="navigation-item-container">
+        <img
+          src="/images/element-icons/elemental_reaction_icon.png"
+          alt=""
+          class="side-navigation-item-image"
+        />
+        <a href="/reactions.html"
+          ><span class="side-navigation-item">REACTIONS</span></a
+        >
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <div id="character-content-container">
+      <h1 id="character-name">SAYU</h1>
+
+      <div id="portrait-and-lore-container">
+        <img
+          src="/images/characters/Portrait/Sayu_Portrait.png"
+          alt=""
+          id="character-portrait"
+        />
+        <p id="character-lore">
+          Sayu, Shuumatsuban's resident ninja, is obsessed with sleeping and
+          growing taller. She has mastered all kinds of ninjutsu to run away and
+          hide in pursuit of opportunities to laze around and sleep. Such an
+          extraordinary skillset may have very unexpected uses.
+        </p>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">TALENTS</h2>
+          <table class="content-table">
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Normal Attack</td>
+              <td>Shuumatsuban Ninja Blade</td>
+              <td>
+                <p class="bold-and-bring-up">Normal Attack</p>
+                <p>Performs up to 4 consecutive strikes.</p>
+                <p class="bold-and-bring-up">Charged Attack</p>
+                <p>
+                  Drains Stamina over time to perform continuous spinning
+                  attacks against all nearby opponents. At the end of the
+                  sequence, performs a more powerful slash.
+                </p>
+                <p class="bold-and-bring-up">Plunging Attack</p>
+                <p>
+                  Plunges from mid-air to strike the ground below, damaging
+                  opponents along the path and dealing AoE DMG upon impact.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Skill</td>
+              <td>Yoohoo Art: Fuuin Dash</td>
+              <td>
+                <p>
+                  The special technique of the Yoohoo Ninja Arts! Sayu curls up
+                  into a rolling Fuufuu Windwheel and smashes into opponents at
+                  high speed, dealing Anemo DMG. When the duration ends, she
+                  unleashes a Fuufuu Whirlwind Kick, dealing AoE Anemo DMG.
+                </p>
+                <p class="bold-and-bring-up">Press/Tap</p>
+                <p>
+                  Enters the Fuufuu Windwheel state, rolling forward a short
+                  distance before using the Fuufuu Whirlwind Kick.
+                </p>
+                <p class="bold-and-bring-up">Hold</p>
+                <p>
+                  Rolls about continuously in the Fuufuu Windwheel state,
+                  increasing Sayu's resistance to interruption while within that
+                  state. During this time, Sayu can control the direction of her
+                  roll, and can use the skill again to end her Windwheel state
+                  early and unleash a stronger version of the Fuufuu Whirlwind
+                  Kick. The Hold version of this skill can trigger Elemental
+                  Absorption. This skill has a maximum duration of 10s and
+                  enters CD once its effects end. The longer Sayu remains in her
+                  Windwheel state, the longer the CD.
+                </p>
+                <p class="bold-and-bring-up">Elemental Absorption</p>
+                <p>
+                  If Sayu comes into contact with Hydro/Pyro/Cryo/Electro while
+                  in her Windwheel state, she will deal additional elemental DMG
+                  of that type. Elemental Absorption may only occur once per use
+                  of this skill.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Elemental Burst</td>
+              <td>Yoohoo Art: Mujina Flurry</td>
+              <td>
+                <p>
+                  The other super special technique of the Yoohoo Ninja Arts! It
+                  summons a pair of helping hands for Sayu. Deals Anemo DMG to
+                  nearby opponents and heals all nearby party members. The
+                  amount of HP restored is based on Sayu's ATK. This skill then
+                  summons a Muji-Muji Daruma.
+                </p>
+                <p class="bold-and-bring-up">Muji-Muji Daruma</p>
+                <p>
+                  At specific intervals, the Daruma will take one of several
+                  actions based on the situation around it:
+                </p>
+                <ul>
+                  <li>
+                    If the HP of nearby characters is above 70%, it will attack
+                    a nearby opponent, dealing Anemo DMG.
+                  </li>
+                  <li>
+                    If there are active characters with 70% or less HP nearby,
+                    it will heal the active character with the lowest percentage
+                    HP left. If there are no opponents nearby, it will heal
+                    active characters nearby even if they have 70% HP or more.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>1st Ascension Passive</td>
+              <td>Someone More Capable</td>
+              <td>
+                <p>
+                  When Sayu triggers a Swirl reaction while active, she heals
+                  all your characters and nearby allies for 300 HP. She will
+                  also heal an additional 1.2 HP for every point of Elemental
+                  Mastery she has. This effect can be triggered once every 2s.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>4th Ascension Passive</td>
+              <td>No Work Today!</td>
+              <td>
+                <p>
+                  The Muji-Muji Daruma created by Yoohoo Art: Mujina Flurry
+                  gains the following effects:
+                </p>
+                <ul>
+                  <li>
+                    When healing a character, it will also heal characters near
+                    that healed character for 20% the amount of HP.
+                  </li>
+                  <li>Increases the AoE of its attack against opponents.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Utility Passive</td>
+              <td>Yoohoo Art: Silencer's Secret</td>
+              <td>
+                <p>
+                  When Sayu is in the party, your characters will not startle
+                  Crystalflies and certain other animals when getting near them.
+                  Check the "Other" sub-category of the "Living Beings /
+                  Wildlife" section in the Archive for creatures this skill
+                  works on.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">CONSTELLATION</h2>
+          <table class="content-table">
+            <tr>
+              <th>Level</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">1</span>
+              </td>
+              <td>Multi-Task no Jutsu</td>
+              <td>
+                The Muji-Muji Daruma created by Yoohoo Art: Mujina Flurry will
+                ignore HP limits and can simultaneously attack nearby opponents
+                and heal characters.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">2</span>
+              </td>
+              <td>Egress Prep</td>
+              <td>
+                Yoohoo Art: Fuuin Dash gains the following effects:
+                <ul>
+                  <li>
+                    DMG of Fuufuu Whirlwind Kick in (Press/Tapping) Mode
+                    increased by 3.3%.
+                  </li>
+                  <li>
+                    Every 0.5s in the Fuufuu Windwheel state will increase the
+                    DMG of this Fuufuu Whirlwind Kick by 3.3%. The maximum DMG
+                    increase possible through this method is 66%.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">3</span>
+              </td>
+              <td>Eh, the Bunshin Can Handle It</td>
+              <td>
+                Increases the Level of Yoohoo Art: Mujina Flurry by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">4</span>
+              </td>
+              <td>Skiving: New and Improved</td>
+              <td>
+                Sayu recovers 1.2 Energy when she triggers a Swirl reaction.
+                This effect occurs once every 2s.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">5</span>
+              </td>
+              <td>Speed Comes First</td>
+              <td>
+                Increases the Level of Yoohoo Art: Fuuin Dash by 3. Maximum
+                upgrade level is 15.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-centered">6</span>
+              </td>
+              <td>Sleep O'Clock</td>
+              <td>
+                The Muji-Muji Daruma created by Sayu's Yoohoo Art: Mujina Flurry
+                will now also benefit from her Elemental Mastery. Each point of
+                Sayu's Elemental Mastery will produce the following effects:
+                <ul>
+                  <li>
+                    Increases the damage dealt by the Muji-Muji Daruma's attacks
+                    by 0.2% ATK. A maximum DMG increase of 400% ATK can be
+                    gained via this method.
+                  </li>
+                  <li>
+                    Increases the HP restored by the Muji-Muji Daruma by 3. A
+                    maximum of 6,000 additional HP can be restored in this
+                    manner.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="section-header">GUIDE</h2>
+          <iframe
+            src="https://www.youtube.com/embed/wpCW0kRZOmw?si=A67vzjhoAMJWtX07"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            id="showcase-video"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container">
+      <div id="list-of-contacts">
+        <a target="_blank" href="https://github.com/EdmondWong3"
+          ><img
+            src="/images/contact-icons/github-icon.png"
+            alt=""
+            id="github-icon"
+            class="contact-icon"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edmond-j-wong/"
+          ><img
+            src="/images/contact-icons/linkedin-icon.png"
+            alt=""
+            id="linkedin-icon"
+            class="contact-icon"
+        /></a>
+        <a href="mailto:edmondjwong12@gmail.com"
+          ><img
+            src="/images/contact-icons/mail-icon.png"
+            alt=""
+            id="mail-icon"
+            class="contact-icon"
+        /></a>
+      </div>
+      <footer id="copyright-footer">&#169;2024 Edmond Wong</footer>
+    </div>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/navigation-bar.js"></script>
+  </body>
+</html>

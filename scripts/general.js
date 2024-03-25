@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
     content.style.display = "block";
   }
 
-  setTimeout(hideLoadingScreen, 1500);
+  setTimeout(hideLoadingScreen, 1000);
 })

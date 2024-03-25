@@ -1,4 +1,4 @@
-<h1 align="center">![Logo](/images/misc/website-icon.png) Genshin Impact Fansite</h1>
+<h1 align="center">Genshin Impact Fansite</h1>
 
 <h2>Description</h2>
 <p>
